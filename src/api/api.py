@@ -4,6 +4,9 @@ app = Flask(__name__)
 app.debug = True
 CORS(app)
 
+from database import db
+from database import models
+
 @app.route("/")
 def index():
     return "Index"
@@ -28,3 +31,15 @@ def get_user(user_id):
     )
 
     return response
+
+
+@app.route("/post-user/<name>")
+def post_user(name):
+    new_user = models.User(name=name)
+    
+    try:
+        db.session.add(new_user)
+        db.session.commit()
+        return redirect('/')
+    except:
+        return "Could not add user"
