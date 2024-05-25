@@ -1,4 +1,5 @@
 from config.libs import *
+from json import dumps
 
 app = Flask(__name__)
 app.debug = True
@@ -25,7 +26,7 @@ def get_user(user_id):
         user_data["extra"] = extra
 
     response = app.response_class(
-        response=json.dumps(user_data),
+        response=dumps(user_data),
         status=200,
         mimetype='application/json'
     )

@@ -1,3 +1,10 @@
 {
-    "can_people_use_get_endpoint": true
+    "db_connection_settings": {
+        "dbms": "mysql",
+        "user": "root",
+        "password": "1234",
+        "host": "localhost",
+        "port": "3306",
+        "name": "flask"
+    }
 }
