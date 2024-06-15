@@ -1,3 +1,9 @@
-import { writable } from 'svelte/store';
+import { readable } from 'svelte/store';
 
-export const title = writable("The Game Tips");
+const siteName = "The Game Tips";
+
+export const title = readable((/** @type {string?} */ subtitle) => {
+    if (!subtitle)
+        return siteName;
+    return siteName + " | " + subtitle;
+});

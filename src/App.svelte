@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>{$title} | Landing Page</title> 
+    <title>{$title()}</title> 
 </svelte:head>
 
 <div>
