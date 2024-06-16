@@ -1,8 +1,7 @@
 <script>
-    // Todo: Security test (text overflow, layout overflow, right position, responsivity etc)
-    // Todo: Responsivity (follow mobile-first principles)
+    
 
-    import MainButton from "../MainButton.svelte";
+    import RedirectButton from "../RedirectButton.svelte";
     
     export let className = "";
 
@@ -45,7 +44,7 @@
                     | {articleDate}
                 </p>
 
-                <MainButton className="ml-auto"></MainButton>
+                <RedirectButton className="ml-auto" href={articlePage}></RedirectButton>
             </div>
         </div>
     </div>
