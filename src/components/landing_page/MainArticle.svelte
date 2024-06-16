@@ -1,6 +1,4 @@
 <script>
-    
-
     import RedirectButton from "../RedirectButton.svelte";
     
     export let className = "";
@@ -44,7 +42,7 @@
                     | {articleDate}
                 </p>
 
-                <RedirectButton className="ml-auto" href={articlePage}></RedirectButton>
+                <RedirectButton className="ml-auto" href={articlePage} />
             </div>
         </div>
     </div>

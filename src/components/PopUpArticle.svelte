@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="h-[350px] w-[330px] bg-white">
+<div class="h-[300px] w-[240px] bg-white">
     
 </div>
 
