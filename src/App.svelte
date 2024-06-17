@@ -1,30 +1,34 @@
 <script>
     import Router from 'svelte-spa-router';
 
-    import Index from './routes/Index.svelte';
-    import Help from './routes/Help.svelte';
-    import NotFound from './routes/NotFound.svelte';
-    import Admin from './routes/Admin.svelte';
-    import About from './routes/About.svelte';
-    import Category from './routes/Category.svelte';
-    import Contact from './routes/Contact.svelte';
-    import Article from './routes/Article.svelte';
+    import Index         from './routes/Index.svelte';
+    import Help          from './routes/Help.svelte';
+    import About         from './routes/About.svelte';
+    import Contact       from './routes/Contact.svelte';
+    import Login         from './routes/Login.svelte';
     import CreateAccount from './routes/CreateAccount.svelte';
-    import UserPage from './routes/UserPage.svelte';
-    import Login from './routes/Login.svelte';
+    import UserPage      from './routes/UserPage.svelte';
+    import Article       from './routes/Article.svelte';
+    import Category      from './routes/Category.svelte';
+    import Admin         from './routes/Admin.svelte';
+    import NotFound      from './routes/NotFound.svelte';
 
     let routes = {
         '/': Index,
-        '/help': Help,
-        '/about': About,
+
+        '/help'   : Help,
+        '/about'  : About,
         '/contact': Contact,
-        '/login': Login,
+
+        '/login'         : Login,
         '/create-account': CreateAccount,
-        '/user/:id': UserPage,
-        '/article/:id': Article,
+
+        '/user/:id'    : UserPage,
+        '/article/:id' : Article,
         '/category/:id': Category,
+
         '/admin': Admin,
-        '*': NotFound
+        '*'     : NotFound
     }
 </script>
 
