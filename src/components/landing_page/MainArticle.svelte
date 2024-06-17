@@ -25,7 +25,7 @@
         <img {src} {alt} class="bg-white h-full aspect-video">
         <div class="flex flex-col">
             <div class="flex-1">
-                <a href={categoryPage} class="text-[#69D3C9] text-[32px]">
+                <a href={categoryPage} class="text-[#69D3C9] text-[32px] font-title-semibold">
                     {gameName}
                 </a>
                 <p class="text-[20px] mt-4">

@@ -2,10 +2,12 @@
 export default {
   plugins: [],
   theme: {
-    fontFamily: {
-      'sans': ['Roboto', 'sans-serif']
+    
+    extend: {
+      fontFamily: {
+        'sans': ['Roboto','sans-serif'],
+      },
     },
-    extend: {},
   },
   content: [
     "./index.html",
