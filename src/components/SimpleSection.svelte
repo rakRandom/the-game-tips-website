@@ -17,7 +17,7 @@
                 <span class="hover:underline">See All</span> &#x279C;
             </a>
         </div>
-        <div class="flex justify-between mt-8">
+        <div class="flex gap-4 justify-between mt-8 overflow-x-auto">
             {#each Array(+elementsQt) as _, i}
                 <svelte:component this={innerElements[i]} {...elementsValues[i]}/>
             {/each}
