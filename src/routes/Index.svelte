@@ -95,8 +95,7 @@
         <div class="w-fit mx-auto">
             <h2 class="text-[#2EC4B6] text-[38px] font-normal">TIPS FOR YOUR GAME OF CHOICE</h2>
             <hr id="goc-underline" 
-                class="w-0 mx-auto border-[1px] border-[#2EC4B6] 
-                    transition-all delay-0 duration-1000">
+                class="w-0 mx-auto border-[1px] border-[#2EC4B6] transition-all delay-0 duration-1000">
         </div>
 
         <div class="flex flex-col gap-[100px] mt-[100px]">

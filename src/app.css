@@ -4,7 +4,7 @@
 
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,4 +16,34 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Roboto.woff2) format('woff2');
+  }
+
+  .font-title-regular {
+    font-family: 'Poppins';
+    font-weight: 400;
+  }
+
+  .font-title-medium {
+    font-family: 'Poppins';
+    font-weight: 500;
+  }
+
+  .font-title-semibold {
+    font-family: 'Poppins';
+    font-weight: 600;
+  }
+
+  .font-title-bold {
+    font-family: 'Poppins';
+    font-weight: 700;
+  }
 }

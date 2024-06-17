@@ -2,6 +2,9 @@
 export default {
   plugins: [],
   theme: {
+    fontFamily: {
+      'sans': ['Roboto', 'sans-serif']
+    },
     extend: {},
   },
   content: [
@@ -11,5 +14,5 @@ export default {
   variants: {
     extend: {},
   },
-  darkmode: false
+  darkMode: "selector"
 }
