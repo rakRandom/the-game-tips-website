@@ -66,7 +66,7 @@
           </div>
           <a href="/signin" class="text-lg text-blue-500 hover:underline">Sign in</a>
           <a href="/central" class="text-lg text-blue-500 hover:underline">Central</a>
-          <a href="/pages/help.html" class="text-lg text-blue-500 hover:underline">Help</a>
+          <a href="/help" class="text-lg text-blue-500 hover:underline">Help</a>
           <a href="/security-center" class="text-lg text-blue-500 hover:underline">Security Center</a>
           <a href="/community" class="text-lg text-blue-500 hover:underline">Community</a>
       </div>
