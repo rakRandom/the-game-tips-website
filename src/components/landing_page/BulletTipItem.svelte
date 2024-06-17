@@ -11,7 +11,7 @@
 </script>
 
 <div class="flex flex-col items-center 
-            min-h-[90px] w-[100px] 
+            min-h-[90px] w-[100px] mt-1 
             hover:cursor-pointer hover:-translate-y-1 
             transition-transform {className}"
     >
