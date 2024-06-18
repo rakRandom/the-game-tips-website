@@ -1,10 +1,9 @@
 <script>
     export let className = "";
-    export let title = "Título";
-    export let seeAllPage = "#";
-    export let elementsQt = "";
-    export let innerElements = [];
-    export let elementsValues = [{}];
+    export let title;
+    export let seeAllPage;
+    export let elementType;
+    export let contents = [{}];
 </script>
 
 <div class="w-full h-fit {className}">
@@ -18,8 +17,8 @@
             </a>
         </div>
         <div class="flex gap-4 justify-between mt-8 overflow-x-auto">
-            {#each Array(+elementsQt) as _, i}
-                <svelte:component this={innerElements[i]} {...elementsValues[i]}/>
+            {#each contents as content}
+                <svelte:component this={elementType} {...content}/>
             {/each}
         </div>
     </div>

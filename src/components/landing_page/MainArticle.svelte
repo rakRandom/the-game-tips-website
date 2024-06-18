@@ -4,25 +4,24 @@
     export let className = "";
 
     // IMG variables
-    export let src = "";
-    export let alt = "";
+    export let imgSrc = "";
 
     // Text variables
-    export let gameName = "MULTIVERSUS";
-    export let categoryPage = "#";
-    export let articleTitle = "Bugs Bunny wins Multiversus tournament in Schick-Schick, BA";
+    export let gameName;
+    export let categoryPage;
+    export let articleTitle;
     // Todo: Author Image
-    export let authorName = "Lucas T.";
-    export let articleDate = "Jun 3, 2024";
-    export let authorPage = "#";  // Redirection
+    export let authorName;
+    export let articleDate;
+    export let authorPage;  // Redirection
 
     // Button variables
-    export let articlePage = "#";  // Redirection
+    export let articlePage;  // Redirection
 </script>
 
 <div class="bg-[#001A24] w-full h-[544px] {className}">
     <div class="flex gap-4 max-w-[1024px] h-full mx-auto py-20">
-        <img {src} {alt} class="bg-white h-full aspect-video">
+        <img src={imgSrc} alt="" class="bg-white h-full aspect-video">
         <div class="flex flex-col">
             <div class="flex-1">
                 <a href={categoryPage} class="text-[#69D3C9] text-[32px] font-title-semibold">

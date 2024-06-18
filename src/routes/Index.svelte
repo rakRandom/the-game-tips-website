@@ -53,12 +53,8 @@
         <SimpleSection 
             className="mt-8"
             title="Bullet Tips" 
-            elementsQt="9"
-            innerElements={[
-                BulletTipItem, BulletTipItem, BulletTipItem, BulletTipItem, BulletTipItem, 
-                BulletTipItem, BulletTipItem, BulletTipItem, BulletTipItem
-            ]} 
-            elementsValues={[
+            elementType={BulletTipItem}
+            contents={[
                 {name: "YO BRO COME OVER HERE"},
                 {name: "CHECK OUT MY NEW SHOES"},
                 {name: "THATS A BRAND NEW"},
@@ -76,11 +72,8 @@
         <div class="flex flex-col gap-20 mt-4">
             <SimpleSection 
                 title="Newest Posts" 
-                elementsQt="4"
-                innerElements={[
-                    PopUpArticle, PopUpArticle, PopUpArticle, PopUpArticle
-                ]} 
-                elementsValues={[
+                elementType={PopUpArticle}
+                contents={[
                     { 
                         gameName: "", 
                         title: "", 
@@ -117,11 +110,8 @@
             />
             <SimpleSection 
                 title="Newest Posts" 
-                elementsQt="4"
-                innerElements={[
-                    PopUpArticle, PopUpArticle, PopUpArticle, PopUpArticle
-                ]} 
-                elementsValues={[
+                elementType={PopUpArticle}
+                contents={[
                     { 
                         gameName: "", 
                         title: "", 
