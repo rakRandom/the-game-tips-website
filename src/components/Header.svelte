@@ -2,7 +2,7 @@
     export let className = "";
 </script>
 
-<div class="bg-[#001219] w-full md:h-[80px] h-[110px] {className} z-10">
+<div class="z-50 bg-[#001219] w-full md:h-[80px] h-[110px] {className}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     
     <nav class="md:max-w-[1024px] h-full mx-auto py-2 w-full">
