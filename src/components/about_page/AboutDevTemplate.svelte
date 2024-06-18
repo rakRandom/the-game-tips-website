@@ -31,7 +31,7 @@
                 </a>
             </div>
         </div>
-        <img class="absolute h-72 w-72 md:h-56 md:w-56 rounded-full z-[5]" src="{image}">
+        <img class="absolute h-72 w-72 md:h-56 md:w-56 rounded-full z-[5]" src="{image}" alt="">
         <p class="bg-[#051D26] md:ps-64 md:pt-3 md:text-lg md:pe-12 md:h-full md:w-full px-4 pt-1 pb-3">{description}</p>
     </div>
 </div>
