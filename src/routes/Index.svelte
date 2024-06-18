@@ -15,6 +15,7 @@
     import NormalArticle from '../components/landing_page/NormalArticle.svelte';
 
     import Footer from '.././components/Footer.svelte';
+    import AboutDevTemplate from '../components/AboutDevTemplate.svelte';
 
     function isInViewport(element) {
         if (!element)

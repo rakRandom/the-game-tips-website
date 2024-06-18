@@ -2,23 +2,23 @@
     export let className = "";
 </script>
 
-<div class="bg-[#001219] w-full md:h-[80px] h-[110px] {className}">
+<div class="bg-[#001219] w-full md:h-[80px] h-[110px] {className} z-10">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     
-    <nav class="max-w-[1024px] h-full mx-auto py-2">
+    <nav class="md:max-w-[1024px] h-full mx-auto py-2 w-full">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="" class="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse">
-                <img src="src\assets\img\help_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="md:h-8 h-7" alt="Flowbite Logo" />
+                <img src="src\assets\img\help_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="md:h-8 h-7" alt="Logo" />
                 <span class="self-center md:text-2xl text-xl font-semibold whitespace-nowrap text-[#69D3C9]">The Game Tips</span>
             </a>
             <div class="flex flex-row items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#39D3C9" class="md:h-8 pe-3 hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#39D3C9" class="md:h-8 pe-3 h-4">
                         <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/>
                     </svg>
                 </button>
                 <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#69D3C9" class="md:h-8 pe-3 hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#69D3C9" class="md:h-8 pe-3 h-4">
                         <path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm504 104v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/>
                     </svg>
                 </button>
@@ -37,7 +37,7 @@
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
-                            <a href="#"
+                            <a href="/#/user/:id"
                                 class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">My Account</a>
                         </li>
                         <li>
@@ -65,16 +65,16 @@
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#69D3C9] rounded-lg bg-[#001219] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#001219]">
                     <li>
-                        <a href="#"
+                        <a href="/"
                             class="block py-2 px-3 text-white rounded hover:bg-[#69D3C9] md:hover:bg-transparent md:hover:text-[#69D3C9] md:p-0">Home</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="/#/about"
                             class="block py-2 px-3 text-white rounded hover:bg-[#69D3C9] md:hover:bg-transparent md:hover:text-[#69D3C9] md:p-0">About Us</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-white rounded hover:bg-[#69D3C9] md:hover:bg-transparent md:hover:text-[#69D3C9] md:p-0">Posts</a>
+                        <a href="/#/help"
+                            class="block py-2 px-3 text-white rounded hover:bg-[#69D3C9] md:hover:bg-transparent md:hover:text-[#69D3C9] md:p-0">Help</a>
                     </li>
                 </ul>
             </div>
