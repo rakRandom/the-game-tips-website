@@ -14,6 +14,7 @@
     import CategoryBar from '.././components/landing_page/CategoryBar.svelte';
 
     import Footer from '.././components/Footer.svelte';
+    import AboutDevTemplate from '../components/AboutDevTemplate.svelte';
 
     function isInViewport(element) {
         if (!element)
