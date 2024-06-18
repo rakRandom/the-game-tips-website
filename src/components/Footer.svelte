@@ -25,7 +25,7 @@
     ];
 </script>
 
-<div class="flex flex-col bg-[#00141E] w-full max-h-[340px] {className} *:w-full *:*:mx-auto *:*:max-w-[1024px]">
+<footer class="flex flex-col bg-[#00141E] w-full max-h-[340px] {className} *:w-full *:*:mx-auto *:*:max-w-[1024px]">
     <div class="h-[260px]">
         <div class="w-full h-full mx-auto py-4 flex flex-row *:h-full">
             <div class="flex-1 pb-8 flex flex-col">
@@ -76,4 +76,4 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
