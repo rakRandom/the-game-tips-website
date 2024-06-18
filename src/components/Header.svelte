@@ -21,7 +21,7 @@
     
     <nav class="md:max-w-[1024px] h-full mx-auto py-2 w-full">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="" class="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse">
+            <a href="/" class="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse">
                 <img src="src\assets\img\help_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="md:h-8 h-7" alt="Logo" />
                 <span class="self-center md:text-2xl text-xl font-semibold whitespace-nowrap text-[#69D3C9]">The Game Tips</span>
             </a>
@@ -41,7 +41,7 @@
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-8 h-8 rounded-full" src="src\assets\img\profile picture placeholder.png" alt="user photo">
+                    <img class="w-8 h-8 rounded-full" src="src\assets\img\profile picture placeholder.png" alt="user">
                 </button>
                 <!-- Dropdown menu -->
                 <div class="z-50 hidden my-4 text-base list-none bg-[#001219] divide-y divide-[#69D3C9] rounded-lg shadow"
@@ -55,11 +55,11 @@
                                 class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">My Account</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="/"
                                 class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">Configurations</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="/"
                                 class="block px-4 py-2 text-sm text-white hover:text-red-600">Sign Out</a>
                         </li>
                     </ul>
