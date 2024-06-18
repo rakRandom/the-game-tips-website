@@ -2,7 +2,6 @@
 export default {
   plugins: [],
   theme: {
-    
     extend: {
       fontFamily: {
         'sans': ['Roboto','sans-serif'],

@@ -1,9 +1,13 @@
 <script>
+    import { isFontBig } from './../stores';
     export let className = "";
 
     const toggleTheme = () => {
         document.documentElement.classList.toggle('dark');
     };
+    const toggleFontSize = () => {
+        isFontBig.update(() => !$isFontBig);
+    }
 </script>
 
 <div class="z-50 bg-[#001219] w-full md:h-[80px] h-[110px] {className}">
@@ -21,7 +25,7 @@
                         <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/>
                     </svg>
                 </button>
-                <button> <!-- Change Font Size -->
+                <button type="button" on:click={toggleFontSize}> <!-- Change Font Size -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#69D3C9" class="md:h-8 pe-3 h-4">
                         <path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm504 104v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/>
                     </svg>
