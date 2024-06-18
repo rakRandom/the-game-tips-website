@@ -18,6 +18,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #001219;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #051D26;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #69D3C9;
+  cursor: pointer;
+
+}
 @layer base {
   @font-face {
     font-family: 'Roboto';
