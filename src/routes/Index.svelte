@@ -146,7 +146,15 @@
                 ]}
             />
 
-            <MidArticle />
+            <MidArticle 
+                contents = {[
+                    ["MULTIVERSUS", "YO BRO COME OVER HERE COME OVER HERE CHECK OUT MY NEW SHOES", "./../../../public/backgroundImageAbout.svg", "1"],
+                    ["", "B", "", "2"],
+                    ["", "C", "", "3"],
+                    ["", "D", "", "4"],
+                    ["", "E", "", "5"]
+                ]} 
+            />
         </div>
     </div>
 

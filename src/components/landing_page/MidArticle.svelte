@@ -1,48 +1,64 @@
 <script>
-    import RedirectButton from '../RedirectButton.svelte'
+    import { fly } from "svelte/transition";
 
-    export let foo = [
-        ["", "", "YO BRO COME OVER HERE COME OVER HERE CHECK OUT MY NEW SHOES"],
-        ["", "", "A"],
-        ["", "", "A"],
-        ["", "", "A"],
-        ["", "", "A"]
-    ];
+    // Game - Title - Src - Href
+    export let contents;
 
-    // Todo: Dynamic modification of this variables
-    let currentGame = "";
-    let description = "";
-    let articlePage = "";
+    let visible = 0;
+    let href = contents[0][3];
+    let src = contents[0][2];
+
+    const changeItem = (/** @type {number} */ key) => { 
+        visible = key; 
+        href = contents[key][3];
+        src = contents[key][2];
+    }
+
+    setInterval(() => {
+        changeItem((visible == contents.length - 1) ? 0 : visible + 1);
+    }, 10000);
 </script>
 
 <div class="h-[500px] w-full">
     <div class="flex gap-6 h-full max-w-[1024px] mx-auto">
-        <div class="flex items-end h-full aspect-[15/10] rounded-lg bg-white overflow-hidden">
-            <div class="h-[50%] w-full p-4 pt-24 text-black
-                        bg-gradient-to-b from-[#00103000] to-[#001030AA]">
-                <h2 class="text-3xl text-cyan-300">
-                    {currentGame}
-                </h2>
-                <p>
-                    {description}
-                </p>
-                <RedirectButton href={articlePage} />
+        <div class="h-full aspect-[15/10] rounded-lg overflow-hidden cursor-pointer">
+            <div class="relative h-full w-full">
+                <a {href} class="absolute h-full w-full"><span></span></a>
+                <img {src} alt="" class="absolute h-full w-full object-cover">
+                {#each contents as content, i}
+                    {#if visible == i}
+                        <div class="z-20 flex items-end h-full w-full">
+                            <div class="relative h-[50%] w-full p-4 pt-32 text-black bg-gradient-to-b from-[#2EC4B600] to-[#2EC4B65A] backdrop-blur-[2px]">
+                                <div in:fly={{y: 200, duration: 1000, delay: 1000}} out:fly={{y:-200, duration:750}} class="absolute">
+                                    <h2 class="text-[32px] text-[#2EC4B6] uppercase font-title-bold">
+                                        {content[0]}
+                                    </h2>
+                                    <p class="text-[20px] text-white mt-2">
+                                        {content[1]}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {/if}
+                {/each}
             </div>
         </div>
-        <div class="flex-1 flex flex-col gap-4 h-full ">
-            {#each foo as bar}
-                <div class="flex gap-4 items-center flex-1 bg-white rounded-lg overflow-hidden">
-                    <img src={bar[0]} alt={bar[1]} class="h-full aspect-square">
+        <ul class="flex-1 flex flex-col gap-4 h-full *:flex-1 *:bg-[#051D26] *:rounded-lg *:overflow-hidden">
+            {#each contents as content, i}
+            <li data-key={i}>
+                <button on:click={() => changeItem(i)} class="flex gap-3 items-center h-full w-full">
+                    <img src={content[2]} alt="" class="h-full aspect-square object-cover">
 
-                    <div class="text-sm text-black break-words">
-                        {bar[2]}
+                    <div class="text-sm text-[#2EC4B6] text-left h-full pt-1 break-words">
+                        {content[1]}
                     </div>
-                </div>
+                </button>
+            </li>
             {/each}
-        </div>
+        </ul>
     </div>
 </div>
 
 <style>
-
+    
 </style>
