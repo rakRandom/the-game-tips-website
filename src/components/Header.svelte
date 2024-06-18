@@ -1,12 +1,18 @@
 <script>
-    import { isFontBig } from './../stores';
     export let className = "";
+
+    let isFontBig = false;
 
     const toggleTheme = () => {
         document.documentElement.classList.toggle('dark');
     };
+
     const toggleFontSize = () => {
-        isFontBig.update(() => !$isFontBig);
+        if (isFontBig) 
+            document.documentElement.style.fontSize = "15px";
+        else 
+            document.documentElement.style.fontSize = "17px";
+        isFontBig = !isFontBig;
     }
 </script>
 

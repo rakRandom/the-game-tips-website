@@ -24,8 +24,9 @@
         <img src={imgSrc} alt="" class="bg-white h-full aspect-video">
         <div class="flex flex-col">
             <div class="flex-1">
-                <a href={categoryPage} class="text-[#69D3C9] text-[32px] font-title-semibold">
+                <a href={categoryPage} class="group text-[#69D3C9] text-[2rem] font-title-semibold cursor-pointer">
                     {gameName}
+                    <hr class="w-0 transition-all delay-100 duration-1000 border-[1px] border-transparent group-hover:border-[#69D3C9] group-hover:w-full">
                 </a>
                 <p class="text-[20px] mt-4">
                     {articleTitle}
