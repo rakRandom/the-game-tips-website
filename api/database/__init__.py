@@ -3,7 +3,7 @@ from api import app
 from json import loads
 
 
-with open("config.json", "r", encoding="UTF-8") as config:
+with open("config/config.json", "r", encoding="UTF-8") as config:
     data = loads(config)["db_connection_settings"]
     DBMS = data["dbms"]
     USER = data["user"]

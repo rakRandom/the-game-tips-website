@@ -12,11 +12,18 @@
         visible = key; 
         href = contents[key][3];
         src = contents[key][2];
+
+        clearInterval(interval);
+        interval = setInterval(() => {
+            changeItem((visible == contents.length - 1) ? 0 : visible + 1);
+        }, 5000);
     }
 
-    setInterval(() => {
+    let interval = setInterval(() => {
         changeItem((visible == contents.length - 1) ? 0 : visible + 1);
-    }, 10000);
+    }, 5000);
+
+    setTimeout(() => { changeItem(0) }, 500)
 </script>
 
 <div class="h-[500px] w-full">

@@ -53,26 +53,24 @@
             articlePage: ""
         },
         {
-            title: "Bullet Tips",
+            title: "",
             seeAllPage: "",
-            elementType: BulletTipItem,
             contents: [
-                {name: "Multiversus", icon: "../src/assets/img/BulletTipIcons/multiversus.png", image:"../src/assets/img/BulletTipImages/multiversusjason-lg.webp"},
-                {name: "Fallout 76", icon: "../src/assets/img/BulletTipIcons/fallout76.png", image:"../src/assets/img/BulletTipImages/Fallout76rahmani.webp"},
-                {name: "Minecraft", icon: "../src/assets/img/BulletTipIcons/minecraft_logo_icon_168974.webp", image:"../src/assets/img/BulletTipImages/creepercape.jpg"},
-                {name: "Red Dead Redemption 2", icon:"../src/assets/img/BulletTipIcons/reddead2.png", image:"../src/assets/img/BulletTipImages/pocketwatch.webp"},
-                {name: "Star Wars Hunters", icon:"../src/assets/img/BulletTipIcons/starwarshunters.webp", image:"../src/assets/img/BulletTipImages/sentinelSW.webp"},
-                {name: "Elden Ring", icon:"../src/assets/img/BulletTipIcons/eldenring.ico", image:"../src/assets/img/BulletTipImages/metheoriteorebladeEldenRing.webp"},
-                {name: "Pokémon Brilliant Diamond", icon:"../src/assets/img/BulletTipIcons/pokemonbd.png", image:"../src/assets/img/BulletTipImages/hoohpokemonbd.webp"},
-                {name: "Call of Duty: Modern Warfare", icon: "../src/assets/img/BulletTipIcons/modernwarfare.png", image:"../src/assets/img/BulletTipImages/goldenPathMW.webp"},
-                {name: "Final Fantasy VII Rebirth", icon:"../src/assets/img/BulletTipIcons/finalfantasy7r.png", image:"../src/assets/img/BulletTipImages/Dark-matter.webp"}
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""},
+                {name: "", icon: "", image: ""}
             ]
         },
         [
             {
-                title: "Newest Posts", 
+                title: "", 
                 seeAllPage: "",
-                elementType: PopUpArticle,
                 contents: [
                     { 
                         gameName: "", 
@@ -109,9 +107,8 @@
                 ]
             }, 
             {
-                title: "Newest Posts", 
+                title: "", 
                 seeAllPage: "",
-                elementType: PopUpArticle,
                 contents: [
                     { 
                         gameName: "", 
@@ -162,7 +159,6 @@
                 gameTitle: "",
                 description: "",
                 categoryPage: "",
-                elementType: NormalArticle,
                 contents: [
                     { 
                         gameName: "", 
@@ -178,7 +174,6 @@
                 gameTitle: "",
                 description: "",
                 categoryPage: "",
-                elementType: NormalArticle,
                 contents: [
                     { 
                         gameName: "", 
@@ -194,7 +189,6 @@
                 gameTitle: "",
                 description: "",
                 categoryPage: "",
-                elementType: NormalArticle,
                 contents: [
                     { 
                         gameName: "", 
@@ -208,6 +202,15 @@
             }
         ]
     ]
+
+    async function getContent() {
+        let response = await fetch("http://127.0.0.1:5000/get-index/0").then((res) => res.json());
+
+        if (response)
+            values = response;
+    }
+
+    getContent();
 </script>
 
 <svelte:head>
@@ -219,13 +222,13 @@
     <MainArticle {...values[0]} />
 
     <div class="mt-12">
-        <SimpleSection className="mt-8" {...values[1]} />
+        <SimpleSection className="mt-8" elementType={BulletTipItem} {...values[1]} />
 
         <hr class="max-w-[1024px] mx-auto mt-14 mb-20">
 
         <div class="flex flex-col gap-20 mt-4">
             {#each values[2] as value}
-                <SimpleSection {...value} />
+                <SimpleSection elementType={PopUpArticle} {...value} />
             {/each}
 
             <MidArticle {...values[3]} />
@@ -241,7 +244,7 @@
 
         <div class="flex flex-col gap-[100px] mt-[100px]">
             {#each values[4] as value}
-                <CategoryBar {...value} /> 
+                <CategoryBar elementType={NormalArticle} {...value} /> 
             {/each}
         </div>
     </div>

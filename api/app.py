@@ -1,5 +1,5 @@
 from api            import app
-from database       import *
+# from database       import *
 
 
 if __name__ == "__main__":

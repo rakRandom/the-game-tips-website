@@ -25,7 +25,7 @@
     },
     { 
       name: "Bárbara Fernandes Rampazi", 
-      image: "/", 
+      image: "public/images_autores/barbara.png", 
       linkedin: "/", 
       github: "https://github.com/caramelPopp", 
       whatsapp: "11977577701",  
@@ -34,7 +34,7 @@
     },
     { 
       name: "Henrique da Silva Macedo",
-      image: "", 
+      image: "public/images_autores/henrique.jpeg", 
       linkedin: "https://www.linkedin.com/in/matheus-jorge-santana-1436462b9/", 
       github: "https://github.com/mathsant-js", 
       whatsapp: "11988553256",  

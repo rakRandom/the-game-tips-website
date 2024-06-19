@@ -1,0 +1,240 @@
+[
+ [
+        {
+            "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape1.png", 
+            "gameName": "Minecraft", 
+            "categoryPage": "/", 
+            "articleTitle": "How to use the Creeper cape in Minecraft", 
+            "authorName": "Henrique", 
+            "articleDate": "27/05/2024", 
+            "authorPage": "/", 
+            "articlePage": "/"
+        },
+        {
+            "title": "Bullet Tips",
+            "seeAllPage": "",
+            "contents": [
+                {"name": "Multiversus", "icon": "../src/assets/img/BulletTipIcons/multiversus.png", "image":"../src/assets/img/BulletTipImages/multiversusjason-lg.webp"},
+                {"name": "Fallout 76", "icon": "../src/assets/img/BulletTipIcons/fallout76.png", "image":"../src/assets/img/BulletTipImages/Fallout76rahmani.webp"},
+                {"name": "Minecraft", "icon": "../src/assets/img/BulletTipIcons/minecraft_logo_icon_168974.webp", "image":"../src/assets/img/BulletTipImages/creepercape.jpg"},
+                {"name": "Red Dead Redemption 2", "icon":"../src/assets/img/BulletTipIcons/reddead2.png", "image":"../src/assets/img/BulletTipImages/pocketwatch.webp"},
+                {"name": "Star Wars Hunters", "icon":"../src/assets/img/BulletTipIcons/starwarshunters.webp", "image":"../src/assets/img/BulletTipImages/sentinelSW.webp"},
+                {"name": "Elden Ring", "icon":"../src/assets/img/BulletTipIcons/eldenring.ico", "image":"../src/assets/img/BulletTipImages/metheoriteorebladeEldenRing.webp"},
+                {"name": "Pokémon Brilliant Diamond", "icon":"../src/assets/img/BulletTipIcons/pokemonbd.png", "image":"../src/assets/img/BulletTipImages/hoohpokemonbd.webp"},
+                {"name": "Call of Duty: Modern Warfare", "icon": "../src/assets/img/BulletTipIcons/modernwarfare.png", "image":"../src/assets/img/BulletTipImages/goldenPathMW.webp"},
+                {"name": "Final Fantasy VII Rebirth", "icon":"../src/assets/img/BulletTipIcons/finalfantasy7r.png", "image":"../src/assets/img/BulletTipImages/Dark-matter.webp"}
+            ]
+        },
+        [
+            {
+                "title": "Newest Posts", 
+                "seeAllPage": "/",
+                "contents": [
+                    { 
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape2.png",
+                        "gameName": "Minecraft", 
+                        "title": "How to use the Creeper cape in Minecraft", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtogetthemeteoriteoreblade1.png",
+                        "gameName": "Elden Ring", 
+                        "title": "How to get the Meteorite Ore Blade in Elden Ring", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/modernwarfare.png",
+                        "gameName": "Modern Warfare", 
+                        "title": "How to earn the Modern Warfare Golden Path achievement", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/imagem5.jpg",
+                        "gameName": "Final Fantasy VII Rebirth", 
+                        "title": "How to Get Dark Matter", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    }
+                ]
+            }, 
+            {
+                "title": "Relevant Posts", 
+                "seeAllPage": "/",
+                "contents": [
+                    { 
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape2.png",
+                        "gameName": "Minecraft", 
+                        "title": "How to use the Creeper cape in Minecraft", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtogetthemeteoriteoreblade1.png",
+                        "gameName": "Elden Ring", 
+                        "title": "How to get the Meteorite Ore Blade in Elden Ring", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/modernwarfare.png",
+                        "gameName": "Modern Warfare", 
+                        "title": "How to earn the Modern Warfare Golden Path achievement", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/imagem5.jpg",
+                        "gameName": "Final Fantasy VII Rebirth", 
+                        "title": "How to Get Dark Matter", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    }
+                ]
+            }
+        ],
+        {
+            "contents": [
+                ["Minecraft", "How to use the Creeper cape in Minecraft", "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape2.png", "/"],
+                ["Elden Ring", "How to get the Meteorite Ore Blade in Elden Ring", "http://127.0.0.1:5000/data/articles/img/howtogetthemeteoriteoreblade1.png", "/"],
+                ["Modern Warfare", "How to earn the Modern Warfare Golden Path achievement", "http://127.0.0.1:5000/data/articles/img/modernwarfare.png", "/"],
+                ["Final Fantasy VII Rebirth", "How to Get Dark Matter", "http://127.0.0.1:5000/data/articles/img/imagem5.jpg", "/"],
+                ["Hogwarts Legacy", "How to unlock more equipment and storage slots in Hogwarts Legacy", "http://127.0.0.1:5000/data/articles/img/imagem6.png", "/"]
+            ]
+        }, 
+        [
+            { 
+                "gameTitle": "God of War",
+                "description": "In God of War, players control Kratos, a Spartan warrior who is sent by the Greek gods to kill Ares, the god of war. As the story progresses, Kratos is revealed to be Ares' former servant, who had been tricked into killing his own family and is haunted by terrible nightmares.",
+                "categoryPage": "",
+                "contents": [
+                    { 
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape2.png",
+                        "gameName": "Minecraft", 
+                        "title": "How to use the Creeper cape in Minecraft", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtogetthemeteoriteoreblade1.png",
+                        "gameName": "Elden Ring", 
+                        "title": "How to get the Meteorite Ore Blade in Elden Ring", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/modernwarfare.png",
+                        "gameName": "Modern Warfare", 
+                        "title": "How to earn the Modern Warfare Golden Path achievement", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/imagem5.jpg",
+                        "gameName": "Final Fantasy VII Rebirth", 
+                        "title": "How to Get Dark Matter", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    }
+                ]
+            },
+            { 
+                "gameTitle": "The Last Of Us",
+                "description": "After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.",
+                "categoryPage": "",
+                "contents": [
+                    { 
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape2.png",
+                        "gameName": "Minecraft", 
+                        "title": "How to use the Creeper cape in Minecraft", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtogetthemeteoriteoreblade1.png",
+                        "gameName": "Elden Ring", 
+                        "title": "How to get the Meteorite Ore Blade in Elden Ring", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/modernwarfare.png",
+                        "gameName": "Modern Warfare", 
+                        "title": "How to earn the Modern Warfare Golden Path achievement", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/imagem5.jpg",
+                        "gameName": "Final Fantasy VII Rebirth", 
+                        "title": "How to Get Dark Matter", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    }
+                ]
+            },
+            { 
+                "gameTitle": "Red Dead Redemption 2",
+                "description": "Red Dead Redemption is set during the decline of the American frontier in the year 1911. It follows John Marston, a former outlaw who, after his wife and son are taken hostage by the government in ransom for his services as a hired gun, sets out to bring three members of his former gang to justice.",
+                "categoryPage": "",
+                "contents": [
+                    { 
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtousethecreepercape2.png",
+                        "gameName": "Minecraft", 
+                        "title": "How to use the Creeper cape in Minecraft", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/howtogetthemeteoriteoreblade1.png",
+                        "gameName": "Elden Ring", 
+                        "title": "How to get the Meteorite Ore Blade in Elden Ring", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/modernwarfare.png",
+                        "gameName": "Modern Warfare", 
+                        "title": "How to earn the Modern Warfare Golden Path achievement", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    },{  
+                        "imgSrc": "http://127.0.0.1:5000/data/articles/img/imagem5.jpg",
+                        "gameName": "Final Fantasy VII Rebirth", 
+                        "title": "How to Get Dark Matter", 
+                        "authorPhotoSrc": "/", 
+                        "authorName": "Lucas T.", 
+                        "postDate": "19/06/2024", 
+                        "articlePage": "/"
+                    }
+                ]
+            }
+        ]
+    ]   
+]

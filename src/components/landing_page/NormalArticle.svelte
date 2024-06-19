@@ -1,5 +1,6 @@
 <script>
     export let className = "";
+    export let imgSrc;
     export let gameName;
     export let title;
     export let authorPhotoSrc;
@@ -9,7 +10,8 @@
 </script>
 
 <div class="h-[375px] min-w-[300px] {className}">
-    <div class="relative w-full h-[75%] bg-white">
+    <div class="relative w-full h-[75%]">
+        <img src={imgSrc} alt="" class="h-full w-full object-cover">
         <div class="absolute w-full h-[53%] -bottom-16">
             <div class="flex w-full h-full justify-center pt-1 hover:-translate-y-1 transition-transform">
                 <div class="flex flex-col text-center w-[90%] h-full bg-[#001219] rounded-md overflow-hidden cursor-pointer">
