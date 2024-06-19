@@ -7,11 +7,11 @@
   let src = "../public/backgroundImageAbout.svg";
 
   let valores = [
-    { name: "Fellipe Leonardo Peixoto Cunha", description: "Mó paz" },
-    { name: "Matheus Jorge Santana", description: "" },
-    { name: "Bárbara Fernandes Rampazi", description: "" },
-    { name: "Henrique", description: "" },
-    { name: "Lucas Tino Rosa", description: "" },
+    { name: "Fellipe Leonardo Peixoto Cunha", description: "Mó paz",image: ""},
+    { name: "Matheus Jorge Santana", description: "", image: ""},
+    { name: "Bárbara Fernandes Rampazi", description: "", image: ""},
+    { name: "Henrique", description: "", image: "" },
+    { name: "Lucas Tino Rosa", description: "I am a student on a Systems Development course. Throughout my studies, I have had many experiences with the process of creating a website, and The Game Tips is the most recent of them. When I'm not programming or studying, I like to play games (mostly looking for secrets), write stories, and hang out with my friends, some of whom you've already met by reading this page.", image: "../src/assets/img/AboutDevs/LTR.jpeg" },
   ];
 </script>
 
