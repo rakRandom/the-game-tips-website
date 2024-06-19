@@ -16,6 +16,6 @@
 
 <div>
   <Header className="sticky top-0" />
-  <CategoryTemplate {...values[id]} />
+  <CategoryTemplate {...values[0]} />
   <Footer />
 </div>

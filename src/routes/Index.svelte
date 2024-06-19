@@ -6,16 +6,14 @@
     // Todo: Add Black and White themes
     // Todo: Add class "uppercase" to the titles that need all the letters to be uppercase
 
-    import { title } from '.././stores.js';
-    import Header from '.././components/Header.svelte'
-    import MainArticle from '.././components/landing_page/MainArticle.svelte';
+    import { title }     from '.././stores.js';
+    import Header        from '.././components/Header.svelte';
+    import MainArticle   from '.././components/landing_page/MainArticle.svelte';
     import SimpleSection from '.././components/SimpleSection.svelte';
     import BulletTipItem from '.././components/landing_page/BulletTipItem.svelte';
-    import PopUpArticle from '.././components/PopUpArticle.svelte';
-    import MidArticle from '.././components/landing_page/MidArticle.svelte';
-    import CategoryBar from '.././components/landing_page/CategoryBar.svelte';
-    import NormalArticle from '../components/landing_page/NormalArticle.svelte';
-
+    import PopUpArticle  from '.././components/PopUpArticle.svelte';
+    import MidArticle    from '.././components/landing_page/MidArticle.svelte';
+    import CategoryBar   from '.././components/landing_page/CategoryBar.svelte';
     import Footer from '.././components/Footer.svelte';
 
     function isInViewport(element) {

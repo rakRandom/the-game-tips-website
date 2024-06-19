@@ -20,7 +20,7 @@
                 <RedirectButton href={categoryPage} />
             </div>
             <div class="flex-1 flex items-center gap-10 h-full overflow-x-auto">
-                <img src={imgSrc} alt="" class="bg-white object-cover w-full h-full">
+                <img src={imgSrc} alt="" class="bg-white object-cover w-full h-full rounded-lg">
             </div>
         </div>
     </div>
