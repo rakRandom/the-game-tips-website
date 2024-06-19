@@ -57,15 +57,15 @@
             seeAllPage: "",
             elementType: BulletTipItem,
             contents: [
-                {name: ""},
-                {name: ""},
-                {name: ""},
-                {name: ""},
-                {name: ""},
-                {name: ""},
-                {name: ""},
-                {name: ""},
-                {name: ""}
+                {name: "Multiversus", icon: "../src/assets/img/BulletTipIcons/multiversus.png", image:"../src/assets/img/BulletTipImages/multiversusjason-lg.webp"},
+                {name: "Fallout 76", icon: "../src/assets/img/BulletTipIcons/fallout76.png", image:"../src/assets/img/BulletTipImages/Fallout76rahmani.webp"},
+                {name: "Minecraft", icon: "../src/assets/img/BulletTipIcons/minecraft_logo_icon_168974.webp", image:"../src/assets/img/BulletTipImages/creepercape.jpg"},
+                {name: "Red Dead Redemption 2", icon:"../src/assets/img/BulletTipIcons/reddead2.png", image:"../src/assets/img/BulletTipImages/pocketwatch.webp"},
+                {name: "Star Wars Hunters", icon:"../src/assets/img/BulletTipIcons/starwarshunters.webp", image:"../src/assets/img/BulletTipImages/sentinelSW.webp"},
+                {name: "Elden Ring", icon:"../src/assets/img/BulletTipIcons/eldenring.ico", image:"../src/assets/img/BulletTipImages/metheoriteorebladeEldenRing.webp"},
+                {name: "Pokémon Brilliant Diamond", icon:"../src/assets/img/BulletTipIcons/pokemonbd.png", image:"../src/assets/img/BulletTipImages/hoohpokemonbd.webp"},
+                {name: "Call of Duty: Modern Warfare", icon: "../src/assets/img/BulletTipIcons/modernwarfare.png", image:"../src/assets/img/BulletTipImages/goldenPathMW.webp"},
+                {name: "Final Fantasy VII Rebirth", icon:"../src/assets/img/BulletTipIcons/finalfantasy7r.png", image:"../src/assets/img/BulletTipImages/Dark-matter.webp"}
             ]
         },
         [

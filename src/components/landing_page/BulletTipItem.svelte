@@ -4,6 +4,8 @@
     export let name;
     export let phrase;
     export let articlePage = "#";
+    export let icon = "../src/assets/img/profile picture placeholder.png";
+    export let image = "../src/assets/img/profile picture placeholder.png";
 
     let foo = "hidden";
     let show = () => {foo = "";};
@@ -16,9 +18,11 @@
             transition-transform {className}"
     >
     <button type="button" on:click={show} class="flex items-center justify-center w-[90px] h-[90px] rounded-full
-                                                 bg-gradient-to-tr from-[#2EC4B6] to-[#FF2202]"
+                                                 bg-gradient-to-tr from-[#2EC4B6] to-[#FF2202] overflow-hidden"
             >
-            <div class="w-[82px] h-[82px] rounded-full bg-white"></div>
+            <div class="w-[82px] h-[82px] rounded-full bg-white">
+                <img src="{icon}" alt="Bullet icon" class="rounded-full">
+            </div>
     </button>
 
     <h1 class="text-center text-[#69D3C9] h-fit break-words">
@@ -28,20 +32,20 @@
 
 <div class="{foo} fixed z-50 top-0 left-0 w-screen h-screen bg-[#00000020] backdrop-blur-sm">
     <div class="flex flex-col gap-4 items-center justify-center h-full w-full">
-        <div class="relative w-[380px] h-[560px] bg-white rounded-xl overflow-hidden">
+        <div class="flex flex-col relative w-[380px] h-[560px] bg-white rounded-xl overflow-hidden">
             <button type="button" on:click={hide} 
                 class="absolute top-2 right-2 w-[30px] h-[30px] pb-[1px] bg-[#000000A0] rounded-full opacity-75 hover:opacity-100">
                 X
             </button>
-            
-            <div class="flex items-end h-full w-full">
+            <img src={image} alt="Bullet image" class="w-full h-[560px]">
+            <div class="flex items-end h-[100px] w-full">
                 <div class="bg-[#000000A0] min-h-[100px] w-full px-4 py-2">
                     {phrase}
                 </div>
             </div>
         </div>
         <div>
-            <a href={articlePage} class="group text-black">
+            <a href={articlePage} class="group text-[#69D3C9]">
                 Want to see more? Check out the complete tip ;)
                 <hr class="w-0 mx-auto border-black 
                            group-hover:w-[75%]
