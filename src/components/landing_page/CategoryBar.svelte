@@ -4,8 +4,7 @@
     export let gameTitle;
     export let description;
     export let categoryPage;
-    export let elementType;
-    export let contents = [];
+    export let imgSrc;
 </script>
 
 <div class="w-full h-[567px] bg-[#00141E]">
@@ -21,9 +20,7 @@
                 <RedirectButton href={categoryPage} />
             </div>
             <div class="flex-1 flex items-center gap-10 h-full overflow-x-auto">
-                {#each contents as content}
-                    <svelte:component this={elementType} {...content} />
-                {/each}
+                <img src={imgSrc} alt="" class="bg-white object-cover w-full h-full">
             </div>
         </div>
     </div>

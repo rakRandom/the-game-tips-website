@@ -159,46 +159,16 @@
                 gameTitle: "",
                 description: "",
                 categoryPage: "",
-                contents: [
-                    { 
-                        gameName: "", 
-                        title: "", 
-                        authorPhotoSrc: "", 
-                        authorName: "", 
-                        postDate: "", 
-                        articlePage: ""
-                    }
-                ]
             },
             {
                 gameTitle: "",
                 description: "",
                 categoryPage: "",
-                contents: [
-                    { 
-                        gameName: "", 
-                        title: "", 
-                        authorPhotoSrc: "", 
-                        authorName: "", 
-                        postDate: "", 
-                        articlePage: ""
-                    }
-                ]
             },
             {
                 gameTitle: "",
                 description: "",
                 categoryPage: "",
-                contents: [
-                    { 
-                        gameName: "", 
-                        title: "", 
-                        authorPhotoSrc: "", 
-                        authorName: "", 
-                        postDate: "", 
-                        articlePage: ""
-                    }
-                ]
             }
         ]
     ]
@@ -244,7 +214,7 @@
 
         <div class="flex flex-col gap-[100px] mt-[100px]">
             {#each values[4] as value}
-                <CategoryBar elementType={NormalArticle} {...value} /> 
+                <CategoryBar {...value} /> 
             {/each}
         </div>
     </div>
