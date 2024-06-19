@@ -4,7 +4,7 @@
     export let className = "";
 
     // IMG variables
-    export let imgSrc = "";
+    export let imgSrc;
 
     // Text variables
     export let gameName;
@@ -22,7 +22,7 @@
 <div class="bg-[#001A24] w-full h-[544px] {className}">
     <div class="flex gap-4 max-w-[1024px] h-full mx-auto py-20">
         <img src={imgSrc} alt="" class="bg-white h-full aspect-video">
-        <div class="flex flex-col">
+        <div class="flex flex-col w-full">
             <div class="flex-1">
                 <a href={categoryPage} class="group text-[#69D3C9] text-[2rem] font-title-semibold uppercase cursor-pointer">
                     {gameName}
@@ -33,7 +33,7 @@
                 </p>
             </div>
             
-            <div class="flex items-center">
+            <div class="flex items-center w-full justify-between">
                 <p class="text-[#69D3C9] text-[18px]">
                     By 
                     <a href={authorPage} class="hover:underline">
@@ -42,7 +42,7 @@
                     | {articleDate}
                 </p>
 
-                <RedirectButton className="ml-auto" href={articlePage} />
+                <RedirectButton href={articlePage} />
             </div>
         </div>
     </div>
