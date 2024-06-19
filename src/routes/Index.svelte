@@ -47,8 +47,8 @@
             gameName: "", 
             categoryPage: "", 
             articleTitle: "", 
-            authorName: "a", 
-            articleDate: "a", 
+            authorName: "", 
+            articleDate: "", 
             authorPage: "", 
             articlePage: ""
         },
@@ -57,15 +57,15 @@
             seeAllPage: "",
             elementType: BulletTipItem,
             contents: [
-                {name: "YO BRO COME OVER HERE"},
-                {name: "CHECK OUT MY NEW SHOES"},
-                {name: "THATS A BRAND NEW"},
-                {name: "ONE, TWO, BUCKLE"},
-                {name: "ON MY SHOOOOOES"},
-                {name: "THREE, FOUR, BUCKLE"},
-                {name: "SOME MOOOOORE"},
-                {name: "FIVE, SIX, NIKE KICKS"},
-                {name: "HAHAHAHA THATS SO FIRE"}
+                {name: ""},
+                {name: ""},
+                {name: ""},
+                {name: ""},
+                {name: ""},
+                {name: ""},
+                {name: ""},
+                {name: ""},
+                {name: ""}
             ]
         },
         [
@@ -150,74 +150,61 @@
         ],
         {
             contents: [
-                ["MULTIVERSUS", "YO BRO COME OVER HERE COME OVER HERE CHECK OUT MY NEW SHOES", "./../../../public/backgroundImageAbout.svg", "1"],
-                ["", "B", "", "2"],
-                ["", "C", "", "3"],
-                ["", "D", "", "4"],
-                ["", "E", "", "5"]
+                ["", "", "", ""],
+                ["", "", "", ""],
+                ["", "", "", ""],
+                ["", "", "", ""],
+                ["", "", "", ""]
             ]
         }, 
         [
             { 
-                gameTitle: "MULTIVERSUS",
-                description: "Descrição bem longa sobre o jogo multiversus, uau, como esse texto é longo. Meu deus, não consigo acreditar, tem um segundo parágrafo, isso só pode ser coisa de textos enormes, tipo aqueles feitos pelo meu mano Machado de Assis, aquele que criou uns livros lá, tipo “O Guarani”, eu acho.",
+                gameTitle: "",
+                description: "",
                 categoryPage: "",
                 elementType: NormalArticle,
                 contents: [
                     { 
-                        gameName: "MULTIVERSUS", 
-                        title: "COMO É VELOZ, COMO É VELOZ, COMO É VELOZ VELOZ VELOZ, UAU-UAU-UAU COMO É VELOZ", 
+                        gameName: "", 
+                        title: "", 
                         authorPhotoSrc: "", 
-                        authorName: "TURBO", 
-                        postDate: "06/04/2005", 
+                        authorName: "", 
+                        postDate: "", 
                         articlePage: ""
-                    }, { 
-                        gameName: "MULTIVERSUS", 
-                        title: "COMO É VELOZ, COMO É VELOZ, COMO É VELOZ VELOZ VELOZ, UAU-UAU-UAU COMO É VELOZ", 
-                        authorPhotoSrc: "", 
-                        authorName: "TURBO", 
-                        postDate: "06/04/2005", 
-                        articlePage: ""
-                    }, { 
-                        gameName: "MULTIVERSUS", 
-                        title: "COMO É VELOZ, COMO É VELOZ, COMO É VELOZ VELOZ VELOZ, UAU-UAU-UAU COMO É VELOZ", 
-                        authorPhotoSrc: "", 
-                        authorName: "TURBO", 
-                        postDate: "06/04/2005", 
-                        articlePage: ""
-                    }, { 
-                        gameName: "MULTIVERSUS", 
-                        title: "COMO É VELOZ, COMO É VELOZ, COMO É VELOZ VELOZ VELOZ, UAU-UAU-UAU COMO É VELOZ", 
-                        authorPhotoSrc: "", 
-                        authorName: "TURBO", 
-                        postDate: "06/04/2005", 
-                        articlePage: ""
-                    }, { 
-                        gameName: "MULTIVERSUS", 
-                        title: "COMO É VELOZ, COMO É VELOZ, COMO É VELOZ VELOZ VELOZ, UAU-UAU-UAU COMO É VELOZ", 
-                        authorPhotoSrc: "", 
-                        authorName: "TURBO", 
-                        postDate: "06/04/2005", 
-                        articlePage: ""
-                    }, { 
-                        gameName: "MULTIVERSUS", 
-                        title: "COMO É VELOZ, COMO É VELOZ, COMO É VELOZ VELOZ VELOZ, UAU-UAU-UAU COMO É VELOZ", 
-                        authorPhotoSrc: "", 
-                        authorName: "TURBO", 
-                        postDate: "06/04/2005", 
-                        articlePage: ""
-                    },
+                    }
                 ]
             },
             {
-                gameTitle: "GOD OF WAR",
+                gameTitle: "",
                 description: "",
-                categoryPage: ""
+                categoryPage: "",
+                elementType: NormalArticle,
+                contents: [
+                    { 
+                        gameName: "", 
+                        title: "", 
+                        authorPhotoSrc: "", 
+                        authorName: "", 
+                        postDate: "", 
+                        articlePage: ""
+                    }
+                ]
             },
             {
-                gameTitle: "the last of us",
+                gameTitle: "",
                 description: "",
-                categoryPage: ""
+                categoryPage: "",
+                elementType: NormalArticle,
+                contents: [
+                    { 
+                        gameName: "", 
+                        title: "", 
+                        authorPhotoSrc: "", 
+                        authorName: "", 
+                        postDate: "", 
+                        articlePage: ""
+                    }
+                ]
             }
         ]
     ]
