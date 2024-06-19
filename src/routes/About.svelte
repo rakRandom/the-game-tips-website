@@ -7,39 +7,39 @@
   let valores = [
     { 
       name: "Fellipe Leonardo Peixoto Cunha", 
-      image: "", 
-      linkedin: "", 
-      github: "", 
-      whatsapp: "",  
-      email: "", 
-      description: "" 
+      image: "public/images_autores/fellipe.png", 
+      linkedin: "https://www.linkedin.com/in/fellipe-leonardo", 
+      github: "https://github.com/rakRandom", 
+      whatsapp: "11993792647",  
+      email: "fellipeleo100@gmail.com", 
+      description: "I'm a student of Systems Development course integrated with High School, passionate about technology, programming and all the things relationed to Computer Science. Future software engineer looking for innovative solutions." 
     },
     { 
       name: "Matheus Jorge Santana", 
-      image: "", 
-      linkedin: "", 
-      github: "", 
-      whatsapp: "",  
-      email: "", 
-      description: "" 
+      image: "public/images_autores/matheus.jpeg", 
+      linkedin: "https://www.linkedin.com/in/henrique-da-silva-macedo-0255942b7/", 
+      github: "https://github.com/HickSouldrow", 
+      whatsapp: "11984912520",  
+      email: "henriquedasilvamacedo6@gmail.com", 
+      description: "Hello, I'm \"17\" years old and my dream is to become a pokem... an efficient worker! I'm also a good programmer, great student, and the best Minecraft player"
     },
     { 
       name: "Bárbara Fernandes Rampazi", 
-      image: "", 
-      linkedin: "", 
-      github: "", 
-      whatsapp: "",  
-      email: "", 
-      description: "" 
+      image: "/", 
+      linkedin: "/", 
+      github: "https://github.com/caramelPopp", 
+      whatsapp: "11977577701",  
+      email: "rampazibarbara1203@gmail.com", 
+      description: "Hi! I'm a 16-year-old student who enjoys visual arts and who needs tips recurrently to pass the levels of the games"
     },
     { 
       name: "Henrique da Silva Macedo",
       image: "", 
-      linkedin: "", 
-      github: "", 
-      whatsapp: "",  
-      email: "", 
-      description: "" 
+      linkedin: "https://www.linkedin.com/in/matheus-jorge-santana-1436462b9/", 
+      github: "https://github.com/mathsant-js", 
+      whatsapp: "11988553256",  
+      email: "mjorgesantana2007@gmail.com", 
+      description: "I'm a 16-year-old student, I like learning new and current things, always keeping up to date with new technologies, I like programming and playing games."
     },
     { 
       name: "Lucas Tino Rosa", 
