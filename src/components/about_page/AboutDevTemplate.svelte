@@ -1,12 +1,17 @@
 <script>
-    export let name = "Dev Name", image = "src\assets\img\profile picture placeholder.png", profileLink = "", linkedin = "https://br.linkedin.com/", github = "https://github.com/", whatsapp = "", email = "lucastino2007@gmail.com.br",
-        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. ";
+    export let name;
+    export let image; 
+    export let linkedin; 
+    export let github; 
+    export let whatsapp; 
+    export let email; 
+    export let description; 
 </script>
 
 <div class="pb-10">
     <div class="flex flex-wrap rounded-t-full rounded-b-[150rem] md:rounded-l-full md:rounded-r-[150rem] md:h-56 md:w-3/5 h-auto w-72 mx-auto bg-none overflow-hidden">
         <div class="rounded-t-3xl flex md:flex-row flex-col bg-[#001219] md:text-left text-center md:pt-1 md:ps-40 md:h-12 md:w-full pt-72 text-lg h-[375px] w-72 md:ms-24 z-[5]">
-            <a href="{profileLink}" class="hover:underline w-full text-lg md:pt-2 pt-3 h-auto font-semibold text-[#69D3C9]">{name}</a>
+            <p class="w-full text-lg md:pt-2 pt-3 h-auto font-semibold text-[#69D3C9]">{name}</p>
             <!-- Social Media Icons -->
             <div class="w-full flex flex-row space-x-3 md:justify-end justify-center md:pe-8 pt-1">
                 <a href="{linkedin}" class="h-8 w-8">

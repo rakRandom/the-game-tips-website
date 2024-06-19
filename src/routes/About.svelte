@@ -4,14 +4,52 @@
   import AboutDevTemplate from "../components/about_page/AboutDevTemplate.svelte";
   import Footer from ".././components/Footer.svelte";
 
-  let src = "../public/backgroundImageAbout.svg";
-
   let valores = [
-    { name: "Fellipe Leonardo Peixoto Cunha", description: "Mó paz" },
-    { name: "Matheus Jorge Santana", description: "" },
-    { name: "Bárbara Fernandes Rampazi", description: "" },
-    { name: "Henrique", description: "" },
-    { name: "Lucas Tino Rosa", description: "" },
+    { 
+      name: "Fellipe Leonardo Peixoto Cunha", 
+      image: "", 
+      linkedin: "", 
+      github: "", 
+      whatsapp: "",  
+      email: "", 
+      description: "" 
+    },
+    { 
+      name: "Matheus Jorge Santana", 
+      image: "", 
+      linkedin: "", 
+      github: "", 
+      whatsapp: "",  
+      email: "", 
+      description: "" 
+    },
+    { 
+      name: "Bárbara Fernandes Rampazi", 
+      image: "", 
+      linkedin: "", 
+      github: "", 
+      whatsapp: "",  
+      email: "", 
+      description: "" 
+    },
+    { 
+      name: "Henrique da Silva Macedo",
+      image: "", 
+      linkedin: "", 
+      github: "", 
+      whatsapp: "",  
+      email: "", 
+      description: "" 
+    },
+    { 
+      name: "Lucas Tino Rosa", 
+      image: "", 
+      linkedin: "/", 
+      github: "https://github.com/Lucas-Tino", 
+      whatsapp: "11914836435",  
+      email: "lucastino2007@gmail.com",
+      description: "" 
+    }
   ];
 </script>
 
@@ -31,7 +69,7 @@
     {/each}
   </div>
   <div class="flex items-center justify-center m-10">
-    <h2 class="text-white text-[36px] font-title-bold block text-center">
+    <h2 class="text-white text-[36px] font-title-bold block text-center my-36 px-[100px]">
       Success is not definitive, failure is not fatal: It is the courage to
       continue that counts.
     </h2>

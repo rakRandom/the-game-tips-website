@@ -7,7 +7,7 @@
   <img {src} alt="Backgound svg" class="w-full h-auto" />
   <div class="absolute z-0">
     <div
-      class="flex items-center justify-between bg-black bg-center opacity-75 w-[990px] h-[390px] p-5"
+      class="flex items-center justify-between bg-black bg-center bg-opacity-75 w-[990px] h-[390px] p-5"
     >
     <div>
 
