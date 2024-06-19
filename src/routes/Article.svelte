@@ -19,7 +19,75 @@
       </p>
     </div>
     <div>
-        <p></p>
+      <p class="text-2xl text-justify">
+        Halberds, like the Lucerne, generally rely on your strength or
+        dexterity. They offer a long range and are enough levels to keep your
+        character agile. While you may switch weapons a few times throughout the
+        game, it's crucial to find a great weapon early in the game that will
+        help you reach the more advanced areas.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-4xl text-justify font-title-semibold my-10">
+        Where to Find Lucerne
+      </h2>
+      <img src="../public/mapEldenRing.svg" alt="Map Elden Ring" />
+      <p class="text-2xl text-justify mt-8">
+        You can find Lucerne just after passing Stormveil Castle. Cross Liurnia
+        dos Lagos and head east, where you will find the free point on the
+        Estrada Norte da Liurnia. Follow the broken road north until you reach a
+        battlefield between soldiers and ghosts. More ghosts will appear shortly
+        after you arrive, and if you continue a little further down the road, a
+        giant ghost will appear to the right of the path.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-4xl text-justify font-title-semibold my-10">
+        Lucerne Map Location
+      </h2>
+      <p class="text-2xl text-justify mt-8">
+        The Lucerne is located among some of the destroyed wagons to the right
+        of the path. With the large number of enemies, it is easy to initially
+        move unseen and destroy carts outside of combat range. There are other
+        valuable items scattered across the battlefield, further encouraging you
+        to defeat all enemies present. This is also an excellent place to
+        collect runes early in the game, as many enemies kill each other,
+        rewarding you with runes. After destroying the wagons, you will find
+        Lucerne among the wreckage.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-4xl text-justify font-title-semibold my-10">
+        How to use Lucerne
+      </h2>
+      <img
+        src="../public/setImageEldenRing.svg"
+        alt="Set equipament Elden Ring"
+      />
+      <p class="text-2xl text-justify mt-8">
+        The Lucerne requires 15 Strength and 12 Dexterity to use. Despite
+        requiring more strength, this weapon scales more with dexterity,
+        reaching a 'B' at its highest levels. This level of scaling is semi-rare
+        in the early sections of the game, making Lucerne an excellent option
+        for dexterity-based builds who also want to maintain a safe distance
+        during combat. Halberd-style weapons are great for dexterity builds, as
+        their light weight and reach help you fight from a distance and quickly
+        reposition if necessary.
+      </p>
+    </div>
+    <div>
+      <p class="text-2xl text-justify mt-8">
+        This weapon deals piercing damage and comes with the “Charge Forth”
+        ability. This ability costs 16 FP to cast and can quickly close the
+        distance between you and more distant enemies. This ability is great for
+        starting fights and benefiting even more from a dexterity build that can
+        retreat after the initial attack. The weapon can also be infused with
+        other Ashes of War to increase its characteristics and better suit your
+        build.
+      </p>
+      <p class="text-[#1E9B8F] dark:text-[#69D3C9] flex justify-center mt-10">
+        _______________________________________________________________________________________________________________________________________________________
+      </p>
     </div>
   </main>
   <Footer />
