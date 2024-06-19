@@ -7,9 +7,9 @@
 
   const values = [
     {
-      gamename: "Multiversus",
+      gamename: "God of War",
       aboutText:
-        "Enter the fray of the MultiVerse, where each match is a big mess of iconic characters facing off in hilariously different ways. Combine Marvin the Martian and Arya Stark, or Velma with Batman — Get ready for a rollercoaster of fun and discover a universe of endless possibilities!",
+        "God of War is an action-adventure video game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released on April 20, 2018 for PlayStation 4 and on January 14, 2022 for Microsoft Windows.",
     },
   ];
 </script>
