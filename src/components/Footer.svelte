@@ -38,9 +38,9 @@
                     Helping the gamers with their seek for Tips and Treasures all around the world!
                 </p>
                 <div class="flex-1 flex gap-4 items-end">
-                    <a href="/"><img src="/images/whatsapp-icon.SVG" alt="WhatsApp" class="h-6 w-6" /></a>
-                    <a href="/"><img src="/images/twitter-icon.SVG" alt="Twitter" class="h-6 w-6" /></a>
-                    <a href="/"><img src="/images/facebook-icon.SVG" alt="Facebook" class="h-6 w-6" /></a>
+                    <a href="/"><img src="src\assets\img\icons8-whatsapp.svg" alt="WhatsApp" class="h-8 w-8" /></a>
+                    <a href="/"><img src="src\assets\img\icons8-twitterx.svg" alt="Twitter" class="h-8 w-8" /></a>
+                    <a href="/"><img src="src\assets\img\icons8-facebook-novo.svg" alt="Facebook" class="h-8 w-8" /></a>
                 </div>
             </div>
 
