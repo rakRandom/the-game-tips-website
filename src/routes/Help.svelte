@@ -14,7 +14,7 @@
 <div class="flex flex-col w-full min-h-screen bg-[#F6F6F6] dark:bg-[#000B10] text-[#121212] dark:text-white">
     <Header className="sticky top-0" />
     <main class="flex flex-col gap-32 flex-1 max-w-[1024px] w-full mx-auto py-24">
-        <div class="bg-[#001A24] py-16 w-full px-8">
+        <div class="dark:bg-[#001A24] bg-[#EEE] py-16 w-full px-8">
             <h1 class="text-4xl text-[#1E9B8F] dark:text-[#69D3C9] font-title-semibold mb-16">
                 Help Center
             </h1>
