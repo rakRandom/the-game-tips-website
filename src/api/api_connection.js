@@ -9,16 +9,19 @@ async function requestApi(request, body) {
     let link = get(apiLink);
 
     if (body)
-        return await fetch(`${link}/${request}`, body);
-    return await fetch(`${link}/${request}`);
+        return await fetch(`${link}${request}`, body);
+    return await fetch(`${link}${request}`);
 }
 
-async function fetchImage(path) {
+/**
+ * @param {string} path
+ */
+function fetchImage(path) {
     if (!path)
         return;
 
     let link = get(apiLink);
-    return await fetch(`${link}/${path}`);
+    return `${link}${path}`;
 }
 
-export { requestApi, fetchImage as getImage };
+export { requestApi, fetchImage };

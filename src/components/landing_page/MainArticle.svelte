@@ -1,4 +1,5 @@
 <script>
+    import { fetchImage } from "./../../api/api_connection";
     import RedirectButton from "../RedirectButton.svelte";
     
     export let className = "";
@@ -21,7 +22,7 @@
 
 <div class="bg-[#001A24] w-full h-[644px] {className}">
     <div class="flex gap-8 max-w-[1320px] h-full mx-auto py-20">
-        <img src={imgSrc} alt="" class="bg-white h-full aspect-video rounded-xl">
+        <img src={fetchImage(imgSrc)} alt="" class="bg-white h-full aspect-video rounded-xl">
         <div class="flex flex-col w-full">
             <div class="flex-1">
                 <a href={categoryPage} class="group text-[#69D3C9] text-[2.5rem] font-title-semibold uppercase cursor-pointer">
