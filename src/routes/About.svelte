@@ -44,7 +44,7 @@
     { 
       name: "Lucas Tino Rosa", 
       description: "I am a student on a Systems Development course. Throughout my studies, I have had many experiences with the process of creating a website, and The Game Tips is the most recent of them. When I'm not programming or studying, I like to play games (mostly looking for secrets), write stories, and hang out with my friends, some of whom you've already met by reading this page.", 
-      image: "../src/assets/img/AboutDevs/LTR.jpeg",
+      image: "/static/media/images_autores/lucas.jpeg",
       linkedin: "/", 
       github: "https://github.com/Lucas-Tino", 
       whatsapp: "11914836435",  
