@@ -1,6 +1,6 @@
 <script>
   let eldenRingImg = "../src/assets/img/eldenRingImage.svg";
-  let userImage = "../public/userImage.svg";
+  let userImage = "userImage.svg";
 </script>
 
 <div class="flex flex-col w-full min-h-screen">

@@ -31,7 +31,7 @@
       <h2 class="text-4xl text-justify font-title-semibold my-10">
         Where to Find Lucerne
       </h2>
-      <img src="../public/mapEldenRing.svg" alt="Map Elden Ring" />
+      <img src="mapEldenRing.svg" alt="Map Elden Ring" />
       <p class="text-2xl text-justify mt-8">
         You can find Lucerne just after passing Stormveil Castle. Cross Liurnia
         dos Lagos and head east, where you will find the free point on the
@@ -61,7 +61,7 @@
         How to use Lucerne
       </h2>
       <img
-        src="../public/setImageEldenRing.svg"
+        src="setImageEldenRing.svg"
         alt="Set equipament Elden Ring"
       />
       <p class="text-2xl text-justify mt-8">

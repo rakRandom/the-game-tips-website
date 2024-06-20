@@ -1,6 +1,6 @@
 <script>
-  let src = "../public/backgroundImageAbout.svg";
-  let logoImage = "../public/logoImage.svg";
+  let src = "backgroundImageAbout.svg";
+  let logoImage = "logoImage.svg";
 </script>
 
 <div class="flex items-center justify-center">

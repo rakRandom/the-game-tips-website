@@ -62,7 +62,7 @@
     <div class="flex items-center h-[80px] bg-[#001B28] border-t-[5px] border-[#002331]">
         <div class="flex items-center w-full h-full mx-auto">
             <a href="/" class="h-12">
-                <img src="./../../public/logoImage.svg" alt="" class="h-full" />
+                <img src="logoImage.svg" alt="" class="h-full" />
             </a>
             
             <div class="relative w-full h-full">

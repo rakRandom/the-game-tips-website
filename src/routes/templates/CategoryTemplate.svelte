@@ -4,7 +4,7 @@
   import PopUpArticle from "../../components/PopUpArticle.svelte";
   
   // A imagem é só pra testar
-  let src = "../public/god-of-war-2018-004-1060x596.jpg";
+  let src = "god-of-war-2018-004-1060x596.jpg";
 
   export let gamename;
   export let aboutText;

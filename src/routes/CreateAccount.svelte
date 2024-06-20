@@ -111,7 +111,7 @@
   <div class="w-full h-auto">
     <img src="/backgroundImage.svg" alt="">
   <div class="header-bg flex items-center justify-center p-2 ">
-    <img src="./../../public/logoImage.svg" alt="Logo" class="mr-2 w-16 h-16" />
+    <img src="logoImage.svg" alt="Logo" class="mr-2 w-16 h-16" />
     <h1 class="title-color text-xl">The Game Tips</h1>
   </div>
   
