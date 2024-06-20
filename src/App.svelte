@@ -12,7 +12,6 @@
     import Category      from './routes/Category.svelte';
     import Admin         from './routes/Admin.svelte';
     import NotFound      from './routes/NotFound.svelte';
-    import CategoryTemplate from './routes/templates/CategoryTemplate.svelte';
 
     let routes = {
         '/': Index,

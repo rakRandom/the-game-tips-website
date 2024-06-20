@@ -171,8 +171,13 @@
         ]
     ]
 
+    import { requestApi } from '../api/api_connection.js';
+
     async function getContent() {
-        let response = await fetch("http://127.0.0.1:5000/get-index/0").then((res) => res.json());
+        let payload = await requestApi("get-index/0");
+        let response = await payload.json();
+
+        console.log(response)
 
         if (response)
             values = response;
