@@ -7,7 +7,7 @@
   let valores = [
     { 
       name: "Fellipe Leonardo Peixoto Cunha", 
-      image: "public/images_autores/fellipe.png", 
+      image: "public/static/media/images_autores/fellipe.png", 
       linkedin: "https://www.linkedin.com/in/fellipe-leonardo", 
       github: "https://github.com/rakRandom", 
       whatsapp: "11993792647",  
@@ -16,7 +16,7 @@
     },
     { 
       name: "Matheus Jorge Santana", 
-      image: "public/images_autores/matheus.jpeg", 
+      image: "public/static/media/images_autores/matheus.jpeg", 
       linkedin: "https://www.linkedin.com/in/henrique-da-silva-macedo-0255942b7/", 
       github: "https://github.com/HickSouldrow", 
       whatsapp: "11984912520",  
@@ -25,7 +25,7 @@
     },
     { 
       name: "Bárbara Fernandes Rampazi", 
-      image: "public/images_autores/barbara.png", 
+      image: "public/static/media/images_autores/barbara.png", 
       linkedin: "/", 
       github: "https://github.com/caramelPopp", 
       whatsapp: "11977577701",  
@@ -34,7 +34,7 @@
     },
     { 
       name: "Henrique da Silva Macedo",
-      image: "public/images_autores/henrique.jpeg", 
+      image: "public/static/media/images_autores/henrique.jpeg", 
       linkedin: "https://www.linkedin.com/in/matheus-jorge-santana-1436462b9/", 
       github: "https://github.com/mathsant-js", 
       whatsapp: "11988553256",  
