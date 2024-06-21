@@ -17,16 +17,16 @@
             <!-- Social Media Icons -->
             <div class="w-full flex flex-row space-x-3 md:justify-end justify-center md:pe-8 pt-1">
                 <a href="{linkedin}" class="h-8 w-8">
-                    <img src="src/assets/img/icons8-linkedin.svg" alt="Logo linkedin">
+                    <img src="static/media/img/icons8-linkedin.svg" alt="Logo linkedin">
                 </a>
                 <a href="{github}" class="h-8 w-8">
-                    <img src="src/assets/img/icons8-github.svg" alt="Logo github">
+                    <img src="static/media/img/icons8-github.svg" alt="Logo github">
                 </a>
                 <a href="https://web.whatsapp.com/send?phone={whatsapp}" class="h-8 w-8">
-                    <img src="src/assets/img/icons8-whatsapp.svg" alt="Logo whatsapp">
+                    <img src="static/media/img/icons8-whatsapp.svg" alt="Logo whatsapp">
                 </a>
                 <a href="mailto:{email}">
-                    <img src="src/assets/img/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Logo email" class="h-8 w-8">
+                    <img src="static/media/img/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Logo email" class="h-8 w-8">
                 </a>
             </div>
         </div>
