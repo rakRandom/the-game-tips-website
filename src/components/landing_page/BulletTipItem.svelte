@@ -1,11 +1,13 @@
 <script>
+    import { fetchImage } from "../../api/api_connection";
+
     export let className = "";
 
     export let name;
     export let phrase;
     export let articlePage = "#";
-    export let icon = "../src/assets/img/profile picture placeholder.png";
-    export let image = "../src/assets/img/profile picture placeholder.png";
+    export let icon;
+    export let image;
 
     let foo = "hidden";
     let show = () => {foo = "";};
@@ -21,7 +23,7 @@
                                                  bg-gradient-to-tr from-[#2EC4B6] to-[#FF2202] overflow-hidden"
             >
             <div class="w-[82px] h-[82px] rounded-full bg-white">
-                <img src="{icon}" alt="Bullet icon" class="rounded-full">
+                <img src="{fetchImage(icon)}" alt="Bullet icon" class="rounded-full">
             </div>
     </button>
 
@@ -37,7 +39,7 @@
                 class="absolute top-2 right-2 w-[30px] h-[30px] pb-[1px] bg-[#000000A0] rounded-full opacity-75 hover:opacity-100">
                 X
             </button>
-            <img src={image} alt="" class="w-full h-[560px] object-cover">
+            <img src={fetchImage(image)} alt="" class="w-full h-[560px] object-cover">
             <div class="flex items-end h-[100px] w-full">
                 <div class="bg-[#001219] min-h-[100px] w-full px-4 py-2">
                     {phrase}

@@ -1,5 +1,6 @@
 <script>
     import { fly } from "svelte/transition";
+    import { fetchImage } from "../../api/api_connection";
 
     // Game - Title - Src - Href
     export let contents;
@@ -31,7 +32,7 @@
         <div class="h-full aspect-[15/10] rounded-lg overflow-hidden cursor-pointer">
             <div class="relative h-full w-full">
                 <a {href} class="absolute h-full w-full"><span></span></a>
-                <img {src} alt="" class="absolute h-full w-full object-cover">
+                <img src={fetchImage(src)} alt="" class="absolute h-full w-full object-cover">
                 {#each contents as content, i}
                     {#if visible == i}
                         <div class="z-20 flex items-end h-full w-full">
@@ -54,7 +55,7 @@
             {#each contents as content, i}
             <li data-key={i}>
                 <button on:click={() => changeItem(i)} class="flex gap-3 items-center h-full w-full">
-                    <img src={content[2]} alt="" class="h-full aspect-square object-cover">
+                    <img src={fetchImage(content[2])} alt="" class="h-full aspect-square object-cover">
 
                     <div class="text-sm text-[#2EC4B6] text-left h-full pt-1 break-words">
                         {content[1]}

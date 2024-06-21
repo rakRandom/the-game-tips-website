@@ -22,22 +22,22 @@
     <nav class="md:max-w-[1024px] h-full mx-auto py-2 w-full">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse">
-                <img src="public\logoImage.svg" class="md:h-8 h-7" alt="Logo" />
+                <img src="logoImage.svg" class="md:h-8 h-7" alt="Logo" />
                 <span class="self-center md:text-2xl text-xl font-semibold whitespace-nowrap text-[#69D3C9]">The Game Tips</span>
             </a>
             <div class="flex flex-row items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button type="button" on:click={toggleTheme}> <!-- Change Theme -->
-                    <img src="src\assets\img\light_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Light mode" class="md:h-8 pe-3 h-4">
+                    <img src="static/media/img/light_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Light mode" class="md:h-8 pe-3 h-4">
                 </button>
                 <button type="button" on:click={toggleFontSize}> <!-- Change Font Size -->
-                    <img src="src\assets\img\text_increase_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Font size" class="md:h-8 pe-3 h-4">
+                    <img src="static/media/img/text_increase_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Font size" class="md:h-8 pe-3 h-4">
                 </button>
                 <button type="button"
                     class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-[#69D3C9]"
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-8 h-8 rounded-full" src="src\assets\img\profile picture placeholder.png" alt="user">
+                    <img class="w-8 h-8 rounded-full" src="static/media/img/profile picture placeholder.png" alt="user">
                 </button>
                 <!-- Dropdown menu -->
                 <div class="z-50 hidden my-4 text-base list-none bg-[#001219] divide-y divide-[#69D3C9] rounded-lg shadow"
@@ -90,7 +90,7 @@
             </div>
             
             <div class="items-center flex flex-row w-full md:w-auto md:order-1 pt-1 md:pt-0">
-                <img src="src\assets\img\search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Search" class="pe-2">
+                <img src="static/media/img/search_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Search" class="pe-2">
                 <div class="relative z-0">
                     <input type="text" id="search_bar" class="block px-0 md:w-full text-white t AAAAAAA bg-transparent border-0 border-b-2 border-white AAAAAAAlack appearance-none focus:outline-none focus:ring-0 focus:border-[#69D3C9] peer" placeholder="" />
                     <label for="search_bar" class="absolute md:block hidden text-white t AAAAAAA duration-300 transform -translate-y-7scale-75 top-0 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-[#69D3C9] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Search Tips...</label>
