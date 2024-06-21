@@ -24,4 +24,19 @@ function fetchImage(path) {
     return `${link}${path}`;
 }
 
-export { requestApi, fetchImage };
+/**
+ * @param {string} path
+ */
+async function getContent(path) {
+    let payload = await requestApi(path, null);
+    let response = await payload.json();
+
+    if (response)
+        return response
+}
+
+export { 
+    requestApi, 
+    fetchImage, 
+    getContent 
+};
