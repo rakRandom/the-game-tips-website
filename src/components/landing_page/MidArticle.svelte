@@ -27,7 +27,7 @@
     setTimeout(() => { changeItem(0) }, 500)
 </script>
 
-<div class="lg:h-[500px] w-full">
+<div class="h-fit lg:h-[500px] w-full">
     <div class="flex flex-col lg:flex-row gap-6 h-full max-w-[1024px] mx-auto">
         <div class="h-full aspect-[15/10] overflow-hidden cursor-pointer lg:rounded-lg">
             <div class="relative h-full w-full">
@@ -55,7 +55,7 @@
         <div class="hidden sm:block lg:flex-1">
             <ul class="flex lg:flex-col gap-4 h-full px-[16px] lg:px-0 *:flex-1 *:bg-[#051D26] *:rounded-lg *:overflow-hidden">
                 {#each contents as content, i}
-                <li data-key={i}>
+                <li data-key={i} class="sm:hover:translate-y-1 lg:hover:translate-y-0 lg:hover:translate-x-1 transition all">
                     <button on:click={() => changeItem(i)} class="flex flex-col gap-2 lg:flex-row items-center h-full w-full">
                         <img src={fetchImage(content[2])} alt="" class="h-full aspect-square object-cover">
     
