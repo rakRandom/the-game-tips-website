@@ -25,14 +25,14 @@
             <img src={fetchImage(imgSrc)} alt="" class="h-full w-full aspect-video object-cover lg:rounded-xl">
         </a>
         
-        <div class="flex flex-col-reverse lg:flex-row gap-4 w-full px-[16px] lg:px-[32px]">
+        <div class="flex flex-col lg:flex-row gap-4 w-full px-[16px] lg:px-[32px]">
             <div class="w-full lg:w-[280px] text-[#1E9B8F] dark:text-[#69D3C9]">
-                <h2 class="text-[2rem] font-title-medium uppercase">
+                <h2 class="text-[2.5rem] font-title-medium uppercase">
                     <a href={categoryPage}>
                         {gameName}
                     </a>
                 </h2>
-                <p class="opacity-75 font-light">
+                <p class="text-[1rem] opacity-75 font-light">
                     By
                     <a href={authorPage}>
                         {authorName}
@@ -40,8 +40,8 @@
                     - {articleDate}
                 </p>
             </div>
-            <div class="flex items-center w-full dark:bg-[#051D26] px-4 py-2 rounded-lg">
-                <a href={articlePage} class="text-[1rem] lg:text-[1.5rem] w-full hover:pl-2 transition-all">
+            <div class="flex items-center w-full lg:dark:bg-[#051D26] lg:px-4 lg:py-2 rounded-lg">
+                <a href={articlePage} class="text-[1.25rem] lg:text-[1.5rem] w-full hover:pl-2 transition-all">
                     {articleTitle}
                 </a>
             </div>
