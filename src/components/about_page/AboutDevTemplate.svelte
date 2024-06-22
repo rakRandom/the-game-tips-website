@@ -31,7 +31,7 @@
             </div>
         </div>
         <img class="absolute h-72 w-72 md:h-56 md:w-56 rounded-full z-[5] object-cover" src={fetchImage(image)} alt="">
-        <p class="dark:bg-[#051D26] bg-[#EEEEEE] md:ps-64 md:pt-3 md:text-lg md:pe-12 md:h-full md:w-full px-4 pt-1 pb-3 text-black dark:text-white">{description}</p>
+        <p class="dark:bg-[#051D26] bg-[#EEEEEE] md:ps-64 md:pt-3 md:text-lg md:pe-12 md:h-full md:w-full px-4 pt-1 pb-3 text-color-body">{description}</p>
     </div>
 </div>
 

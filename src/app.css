@@ -71,3 +71,17 @@
   }
   
 }
+
+@layer components {
+  .text-color-title {
+    @apply text-[#1E9B8F] dark:text-[#69D3C9];
+  }
+
+  .text-color-body {
+    @apply text-[#000B10] dark:text-white;
+  }
+
+  .bg-color-mid {
+    @apply bg-[#E6F4F3] dark:bg-[#051D26];
+  }
+}

@@ -8,7 +8,7 @@
 
 <div class="w-full h-fit {className}">
     <div class="max-w-[1024px] px-[16px] xl:px-[0px] h-full mx-auto">
-        <div class="flex text-[#69D3C9]">
+        <div class="flex text-color-title">
             <h2 class="text-[24px] font-medium">
                 {title}
             </h2>

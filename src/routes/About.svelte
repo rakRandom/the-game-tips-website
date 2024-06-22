@@ -40,7 +40,7 @@
         {/each}
     </div>
     <div class="flex items-center justify-center m-10">
-        <h2 class="text-white text-[36px] font-title-bold block text-center my-36 px-[100px]">
+        <h2 class="text-color-body text-[36px] font-title-bold block text-center my-36 px-[100px]">
             Success is not definitive, failure is not fatal: It is the courage to
             continue that counts.
         </h2>

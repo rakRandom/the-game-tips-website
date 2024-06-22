@@ -38,10 +38,12 @@
                         <div class="z-20 flex items-end h-full w-full">
                             <div class="relative h-fit w-full px-4 py-8 text-black bg-gradient-to-b from-[#2EC4B600] to-[#2EC4B65A] backdrop-blur-[4px]">
                                 <div in:fly={{y: 200, duration: 1000, delay: 1000}} out:fly={{y:-200, duration:750}}>
-                                    <h2 class="text-[2rem] text-[#2EC4B6] uppercase font-title-bold">
+                                    <!-- This text needs to be only one color -->
+                                    <h2 class="text-[2rem] text-[#69D3C9] uppercase font-title-bold">
                                         {content[0]}
                                     </h2>
-                                    <p class="text-[1.5rem] text-white mt-2">
+                                    <!-- This text needs to be only white -->
+                                    <p class="text-[1.5rem] text-white mt-2"> 
                                         {content[1]}
                                     </p>
                                 </div>
@@ -53,13 +55,13 @@
         </div>
 
         <div class="hidden sm:block lg:flex-1">
-            <ul class="flex lg:flex-col gap-4 h-full px-[16px] lg:px-0 *:flex-1 *:bg-[#051D26] *:rounded-lg *:overflow-hidden">
+            <ul class="flex lg:flex-col gap-4 h-full px-[16px] lg:px-0 *:flex-1 *:bg-color-mid *:rounded-lg *:overflow-hidden">
                 {#each contents as content, i}
                 <li data-key={i} class="sm:hover:translate-y-1 lg:hover:translate-y-0 lg:hover:translate-x-1 transition all">
                     <button on:click={() => changeItem(i)} class="flex flex-col gap-2 lg:flex-row items-center h-full w-full">
                         <img src={fetchImage(content[2])} alt="" class="h-full aspect-square object-cover">
     
-                        <div class="text-sm text-[#2EC4B6] text-left h-full lg:h-fit pt-1 break-words p-2">
+                        <div class="text-sm text-color-title text-left h-full lg:h-fit pt-1 break-words p-2">
                             {content[1]}
                         </div>
                     </button>

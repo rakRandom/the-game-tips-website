@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="w-full min-h-screen bg-[#F6F6F6] dark:bg-[#000B10] text-[#121212] dark:text-white"
+  class="w-full min-h-screen bg-[#F6F6F6] dark:bg-[#000B10] text-color-body"
 >
   <Header className="sticky top-0" />
   <HeadlineTemplate />
@@ -85,7 +85,7 @@
         other Ashes of War to increase its characteristics and better suit your
         build.
       </p>
-      <p class="text-[#1E9B8F] dark:text-[#69D3C9] flex justify-center mt-10">
+      <p class="text-color-title flex justify-center mt-10">
         _______________________________________________________________________________________________________________________________________________________
       </p>
     </div>

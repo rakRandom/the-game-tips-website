@@ -177,7 +177,7 @@
     <title>{$title()}</title> 
 </svelte:head>
 
-<div class="w-full min-h-screen bg-[#000B10]">
+<div class="w-full min-h-screen bg-[#FDFDFD] dark:bg-[#000B10]">
     <Header className="z-50 sticky top-0" />
     <MainArticle {...values[0]} />
 
@@ -197,9 +197,9 @@
 
     <div class="mt-40">
         <div class="w-fit mx-auto">
-            <h2 class="text-[#2EC4B6] text-[38px] font-title-regular text-center">TIPS FOR YOUR GAME OF CHOICE</h2>
+            <h2 class="text-color-title text-[38px] font-title-regular text-center">TIPS FOR YOUR GAME OF CHOICE</h2>
             <hr id="goc-underline" 
-                class="w-0 mx-auto border-[1px] border-[#2EC4B6] transition-all delay-300 duration-1000">
+                class="w-0 mx-auto border-[1px] border-[#1E9B8F] dark:border-[#69D3C9] transition-all delay-300 duration-1000">
         </div>
 
         <div class="flex flex-col gap-[100px] mt-[100px]">

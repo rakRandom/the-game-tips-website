@@ -25,11 +25,11 @@
     ];
 </script>
 
-<footer class="flex flex-col bg-[#00141E] text-white w-full lg:max-h-[340px] {className} *:w-full *:*:mx-auto *:*:max-w-[1024px]">
+<footer class="flex flex-col bg-color-mid text-color-body w-full lg:max-h-[340px] {className} *:w-full *:*:mx-auto *:*:max-w-[1024px]">
     <div class="h-full lg:h-[260px]">
         <div class="flex flex-col lg:flex-row w-full h-full mx-auto py-4 *:h-full">
             <div class="flex-1 pb-8 flex flex-col px-[16px] sm:px-[32px] lg:px-0 lg:pl-[32px] xl:pl-0">
-                <h2 class="text-[1.75rem] font-title-semibold text-[#2EC4B6] mb-2 cursor-pointer hover:translate-x-2 transition-transform">
+                <h2 class="text-[1.75rem] font-title-semibold text-color-title mb-2 cursor-pointer hover:translate-x-2 transition-transform">
                     <a href="/">
                         The Game Tips
                     </a>
@@ -44,11 +44,11 @@
                 </div>
             </div>
 
-            <div class="hidden lg:block w-[1px] border"></div>
-            <hr class="block lg:hidden mx-[16px] sm:mx-[32px] mb-6">
+            <div class="hidden lg:block w-[1px] border border-color"></div>
+            <hr class="block lg:hidden mx-[16px] sm:mx-[32px] mb-6 border-color">
 
             <div class="flex-1 px-[16px] sm:px-[32px] lg:px-0 lg:pl-12 pb-8">
-                <h2 class="text-[1.75rem] font-title-semibold text-[#2EC4B6] mb-2 cursor-pointer hover:translate-x-2 transition-transform">
+                <h2 class="text-[1.75rem] font-title-semibold text-color-title mb-2 cursor-pointer hover:translate-x-2 transition-transform">
                     More Hints
                 </h2>
                 <div class="flex flex-col flex-wrap h-full max-md:h-[150px] max-lg:h-[100px] overflow-hidden *:w-fit hover:*:underline hover:*:translate-x-1 *:transition-transform">
@@ -78,3 +78,9 @@
         </div>
     </div>
 </footer>
+
+<style>
+    .border-color {
+        @apply border-[#051D26] dark:border-[#E6F4F3];
+    }
+</style>

@@ -19,15 +19,16 @@
             hover:cursor-pointer hover:-translate-y-1 
             transition-transform {className}"
     >
-    <button type="button" on:click={show} class="flex items-center justify-center w-[90px] h-[90px] rounded-full
-                                                 bg-gradient-to-tr from-[#2EC4B6] to-[#FF2202] overflow-hidden"
+    <button type="button" 
+            on:click={show} 
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-gradient-to-tr from-[#2EC4B6] to-[#FF2202] overflow-hidden drop-shadow-md"
             >
             <div class="w-[82px] h-[82px] rounded-full bg-white">
                 <img src="{fetchImage(icon)}" alt="Bullet icon" class="rounded-full">
             </div>
     </button>
 
-    <h1 class="text-center text-[#69D3C9] h-fit break-words">
+    <h1 class="text-center text-color-title h-fit break-words">
         {name}
     </h1>
 </div>

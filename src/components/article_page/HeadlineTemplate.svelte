@@ -7,7 +7,7 @@
   <main class="flex flex-col gap-32 flex-1 max-w-[1024px] w-full mx-auto py-24">
     <div>
       <h1
-        class="flex items-start text-5xl text-[#1E9B8F] dark:text-[#69D3C9] font-title-semibold mb-12"
+        class="flex items-start text-5xl text-color-title font-title-semibold mb-12"
       >
         ELDEN RING
       </h1>
@@ -17,11 +17,11 @@
       <img src={eldenRingImg} alt="Elden Ring" class="mb-8" />
       <div class="flex flex-row items-center">
         <img src={userImage} alt="User" />
-        <p class="text-[#1E9B8F] dark:text-[#69D3C9] mx-5">
+        <p class="text-color-title mx-5">
           By Valteci Junior T. • Mai 28, 2024
         </p>
       </div>
-      <p class="text-[#1E9B8F] dark:text-[#69D3C9] flex justify-center mt-2">
+      <p class="text-color-title flex justify-center mt-2">
         _______________________________________________________________________________________________________________________________________________________
       </p>
     </div>

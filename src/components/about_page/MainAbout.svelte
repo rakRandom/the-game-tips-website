@@ -12,7 +12,7 @@
     <div>
 
       <h1 class="text-[#69D3C9] text-[36px] font-title-semibold block">About Us</h1>
-      <p class="text-white w-[40rem] text-justify">
+      <p class="text-color-body w-[40rem] text-justify">
         The Game Tips is a website that focuses on sharing tips with gamers,
         helping them get through hard levels and challenges, or be better at
         online games. The idea for this project came from our team’s own
