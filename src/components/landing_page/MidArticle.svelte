@@ -27,21 +27,21 @@
     setTimeout(() => { changeItem(0) }, 500)
 </script>
 
-<div class="h-[500px] w-full">
-    <div class="flex gap-6 h-full max-w-[1024px] mx-auto">
-        <div class="h-full aspect-[15/10] rounded-lg overflow-hidden cursor-pointer">
+<div class="lg:h-[500px] w-full">
+    <div class="flex flex-col lg:flex-row gap-6 h-full max-w-[1024px] mx-auto">
+        <div class="h-full aspect-[15/10] overflow-hidden cursor-pointer lg:rounded-lg">
             <div class="relative h-full w-full">
                 <a {href} class="absolute h-full w-full"><span></span></a>
                 <img src={fetchImage(src)} alt="" class="absolute h-full w-full object-cover">
                 {#each contents as content, i}
                     {#if visible == i}
                         <div class="z-20 flex items-end h-full w-full">
-                            <div class="relative h-[50%] w-full p-4 pt-32 text-black bg-gradient-to-b from-[#2EC4B600] to-[#2EC4B65A] backdrop-blur-[2px]">
+                            <div class="relative h-[40%] lg:h-[25%] w-full p-4 pt-12 text-black bg-gradient-to-b from-[#2EC4B600] to-[#2EC4B65A] backdrop-blur-[4px]">
                                 <div in:fly={{y: 200, duration: 1000, delay: 1000}} out:fly={{y:-200, duration:750}} class="absolute">
-                                    <h2 class="text-[32px] text-[#2EC4B6] uppercase font-title-bold">
+                                    <h2 class="text-[2rem] text-[#2EC4B6] uppercase font-title-bold">
                                         {content[0]}
                                     </h2>
-                                    <p class="text-[20px] text-white mt-2">
+                                    <p class="text-[1.5rem] text-white mt-2">
                                         {content[1]}
                                     </p>
                                 </div>
@@ -51,19 +51,22 @@
                 {/each}
             </div>
         </div>
-        <ul class="flex-1 flex flex-col gap-4 h-full *:flex-1 *:bg-[#051D26] *:rounded-lg *:overflow-hidden">
-            {#each contents as content, i}
-            <li data-key={i}>
-                <button on:click={() => changeItem(i)} class="flex gap-3 items-center h-full w-full">
-                    <img src={fetchImage(content[2])} alt="" class="h-full aspect-square object-cover">
 
-                    <div class="text-sm text-[#2EC4B6] text-left h-full pt-1 break-words">
-                        {content[1]}
-                    </div>
-                </button>
-            </li>
-            {/each}
-        </ul>
+        <div class="hidden sm:block lg:flex-1">
+            <ul class="flex lg:flex-col gap-4 h-full px-[16px] lg:px-0 *:flex-1 *:bg-[#051D26] *:rounded-lg *:overflow-hidden">
+                {#each contents as content, i}
+                <li data-key={i}>
+                    <button on:click={() => changeItem(i)} class="flex flex-col gap-2 lg:flex-row items-center h-full w-full">
+                        <img src={fetchImage(content[2])} alt="" class="h-full aspect-square object-cover">
+    
+                        <div class="text-sm text-[#2EC4B6] text-left h-full lg:h-fit pt-1 break-words p-2">
+                            {content[1]}
+                        </div>
+                    </button>
+                </li>
+                {/each}
+            </ul>
+        </div>
     </div>
 </div>
 
