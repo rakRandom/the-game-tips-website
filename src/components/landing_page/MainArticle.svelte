@@ -20,28 +20,29 @@
 </script>
 
 <div class="bg-[#001A24] w-full h-fit {className}">
-    <div class="flex flex-col gap-8 max-w-[1280px] mx-auto pb-10 lg:pt-10 lg:px-[64px] h-full">
+    <div class="flex flex-col gap-8 max-w-[1280px] mx-auto pb-10 lg:px-[96px] h-full">
         <a href={articlePage} class="aspect-video">
-            <img src={fetchImage(imgSrc)} alt="" class="h-full w-full aspect-video object-cover lg:rounded-xl">
+            <img src={fetchImage(imgSrc)} alt="" class="h-full w-full aspect-video object-cover lg:rounded-b-lg">
         </a>
         
         <div class="flex flex-col lg:flex-row gap-2 w-full px-[16px] lg:px-[32px]">
-            <div class="w-full lg:max-w-[360px] text-[#1E9B8F] dark:text-[#69D3C9]">
-                <h2 class="text-[2.5rem] font-title-medium uppercase">
+            <div class="w-[33%] text-[#1E9B8F] dark:text-[#69D3C9]">
+                <h2 class="group text-[2rem] font-title-medium uppercase mb-2 w-fit">
                     <a href={categoryPage}>
                         {gameName}
                     </a>
+                    <hr class="hidden lg:block w-0 group-hover:w-full border-t-2 border-[#1E9B8F] dark:border-[#69D3C9] transition-all delay-200 duration-1000">
                 </h2>
                 <p class="text-[1rem] opacity-75 font-light">
                     By
-                    <a href={authorPage}>
+                    <a href={authorPage} class="hover:underline">
                         {authorName}
                     </a>
                     - {articleDate}
                 </p>
             </div>
-            <div class="flex items-center w-full lg:dark:bg-[#051D26] lg:px-4 lg:py-2 rounded-lg">
-                <a href={articlePage} class="text-[1.25rem] lg:text-[1.5rem] w-full hover:pl-2 transition-all">
+            <div class="flex items-center w-[66%] lg:px-4 lg:py-2 border-l-2 border-[#1E9B8F] dark:border-[#69D3C9]">
+                <a href={articlePage} class="text-[1.25rem] lg:text-[1.50rem] text-[#000B10] dark:text-white w-full hover:-translate-y-1 transition-all">
                     {articleTitle}
                 </a>
             </div>
