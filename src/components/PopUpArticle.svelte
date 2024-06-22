@@ -11,9 +11,9 @@
     export let articlePage;
 </script>
 
-<div class="h-[300px] w-[240px] {className}">
+<div class="h-[280px] min-w-[220px] max-w-[220px] {className}">
     <div class="relative w-full h-[75%]">
-        <img src={fetchImage(imgSrc)} alt="" class="w-full h-full object-cover">
+        <img src={fetchImage(imgSrc)} alt="" class="w-full h-full object-cover rounded-lg">
         <div class="absolute w-full h-[53%] -bottom-16">
             <div class="flex w-full h-full justify-center pt-1 hover:-translate-y-1 transition-transform">
                 <div class="flex flex-col text-center w-[90%] h-full bg-[#001219] rounded-md overflow-hidden cursor-pointer">
