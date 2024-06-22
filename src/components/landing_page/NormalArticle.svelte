@@ -1,4 +1,6 @@
 <script>
+    // WARNING: Not used anymore
+
     export let className = "";
     export let imgSrc;
     export let gameName;
