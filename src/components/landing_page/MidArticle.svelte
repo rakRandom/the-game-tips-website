@@ -29,7 +29,7 @@
 
 <div class="h-fit lg:h-[500px] w-full">
     <div class="flex flex-col lg:flex-row gap-6 h-full max-w-[1024px] mx-auto">
-        <div class="h-full aspect-[15/10] overflow-hidden cursor-pointer lg:rounded-lg">
+        <div class="h-full aspect-square sm:aspect-[15/10] overflow-hidden cursor-pointer lg:rounded-lg">
             <div class="relative h-full w-full">
                 <a {href} class="absolute h-full w-full"><span></span></a>
                 <img src={fetchImage(src)} alt="" class="absolute h-full w-full object-cover">
