@@ -25,8 +25,8 @@
             <img src={fetchImage(imgSrc)} alt="" class="h-full w-full aspect-video object-cover lg:rounded-xl">
         </a>
         
-        <div class="flex flex-col lg:flex-row gap-4 w-full px-[16px] lg:px-[32px]">
-            <div class="w-full lg:w-[280px] text-[#1E9B8F] dark:text-[#69D3C9]">
+        <div class="flex flex-col lg:flex-row gap-2 w-full px-[16px] lg:px-[32px]">
+            <div class="w-full lg:max-w-[360px] text-[#1E9B8F] dark:text-[#69D3C9]">
                 <h2 class="text-[2.5rem] font-title-medium uppercase">
                     <a href={categoryPage}>
                         {gameName}
