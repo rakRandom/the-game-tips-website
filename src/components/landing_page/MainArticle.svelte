@@ -1,6 +1,5 @@
 <script>
     import { fetchImage } from "./../../api/api_connection";
-    import RedirectButton from "../RedirectButton.svelte";
     
     export let className = "";
 
@@ -20,30 +19,31 @@
     export let articlePage;  // Redirection
 </script>
 
-<div class="bg-[#001A24] w-full h-[644px] {className}">
-    <div class="flex gap-8 max-w-[1320px] h-full mx-auto py-20">
-        <img src={fetchImage(imgSrc)} alt="" class="bg-white h-full aspect-video rounded-xl">
-        <div class="flex flex-col w-full">
-            <div class="flex-1">
-                <a href={categoryPage} class="group text-[#69D3C9] text-[2.5rem] font-title-semibold uppercase cursor-pointer">
-                    {gameName}
-                    <hr class="w-0 transition-all delay-100 duration-1000 border-[1px] border-transparent group-hover:border-[#69D3C9] group-hover:w-full">
-                </a>
-                <p class="text-[1.75rem] mt-4">
-                    {articleTitle}
+<div class="bg-[#001A24] w-full h-fit {className}">
+    <div class="flex flex-col gap-8 max-w-[1280px] mx-auto pb-10 lg:pt-10 lg:px-[64px] h-full">
+        <a href={articlePage} class="aspect-video">
+            <img src={fetchImage(imgSrc)} alt="" class="h-full w-full aspect-video object-cover lg:rounded-xl">
+        </a>
+        
+        <div class="flex flex-col-reverse lg:flex-row gap-4 w-full px-[16px] lg:px-[32px]">
+            <div class="w-full lg:w-[280px] text-[#1E9B8F] dark:text-[#69D3C9]">
+                <h2 class="text-[2rem] font-title-medium uppercase">
+                    <a href={categoryPage}>
+                        {gameName}
+                    </a>
+                </h2>
+                <p class="opacity-75 font-light">
+                    By
+                    <a href={authorPage}>
+                        {authorName}
+                    </a>
+                    - {articleDate}
                 </p>
             </div>
-            
-            <div class="flex items-center w-full justify-between">
-                <p class="text-[#69D3C9] text-[18px]">
-                    By 
-                    <a href={authorPage} class="hover:underline">
-                        {authorName}
-                    </a> 
-                    | {articleDate}
-                </p>
-
-                <RedirectButton href={articlePage} />
+            <div class="flex items-center w-full dark:bg-[#051D26] px-4 py-2 rounded-lg">
+                <a href={articlePage} class="text-[1rem] lg:text-[1.5rem] w-full hover:pl-2 transition-all">
+                    {articleTitle}
+                </a>
             </div>
         </div>
     </div>
