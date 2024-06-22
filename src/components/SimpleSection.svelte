@@ -7,7 +7,7 @@
 </script>
 
 <div class="w-full h-fit {className}">
-    <div class="max-w-[1024px] h-full mx-auto">
+    <div class="max-w-[1024px] px-[16px] xl:px-[0px] h-full mx-auto">
         <div class="flex text-[#69D3C9]">
             <h2 class="text-[24px] font-medium">
                 {title}
