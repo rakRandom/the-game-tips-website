@@ -36,7 +36,7 @@
                 {#each contents as content, i}
                     {#if visible == i}
                         <div class="z-20 flex items-end h-full w-full">
-                            <div class="relative h-[40%] lg:h-[25%] w-full p-4 pt-12 text-black bg-gradient-to-b from-[#2EC4B600] to-[#2EC4B65A] backdrop-blur-[4px]">
+                            <div class="relative h-[40%] lg:h-[30%] w-full p-4 pt-12 text-black bg-gradient-to-b from-[#2EC4B600] to-[#2EC4B65A] backdrop-blur-[4px]">
                                 <div in:fly={{y: 200, duration: 1000, delay: 1000}} out:fly={{y:-200, duration:750}} class="absolute">
                                     <h2 class="text-[2rem] text-[#2EC4B6] uppercase font-title-bold">
                                         {content[0]}
