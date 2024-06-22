@@ -9,9 +9,9 @@
 
     const toggleFontSize = () => {
         if (isFontBig) 
-            document.documentElement.style.fontSize = "15px";
+            document.documentElement.style.fontSize = "14px";
         else 
-            document.documentElement.style.fontSize = "17px";
+            document.documentElement.style.fontSize = "16px";
         isFontBig = !isFontBig;
     }
 </script>
