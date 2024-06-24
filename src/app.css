@@ -86,6 +86,6 @@
   }
 
   .bg-color-mid {
-    @apply bg-[#E6F4F3] dark:bg-[#051D26];
+    @apply bg-[#E6F4F3] dark:bg-[#00141E];
   }
 }
