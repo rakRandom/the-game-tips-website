@@ -81,6 +81,10 @@
     @apply text-[#000B10] dark:text-white;
   }
 
+  .bg-color-0 {
+    @apply bg-[#FDFDFD] dark:bg-[#000B10];
+  }
+
   .bg-color-mid {
     @apply bg-[#E6F4F3] dark:bg-[#051D26];
   }

@@ -177,7 +177,7 @@
     <title>{$title()}</title> 
 </svelte:head>
 
-<div class="w-full min-h-screen bg-[#FDFDFD] dark:bg-[#000B10]">
+<div class="w-full min-h-screen bg-color-0">
     <Header className="z-50 sticky top-0" />
     <MainArticle {...values[0]} />
 
