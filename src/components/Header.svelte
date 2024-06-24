@@ -2,6 +2,7 @@
     export let className = "";
 
     let isFontBig = false;
+    let userID = 100;
 
     const toggleTheme = () => {
         document.documentElement.classList.toggle('dark');
@@ -47,7 +48,8 @@
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
-                            <a href="/#/user/:id"
+                            <!-- 0 significa que é o próprio usuário -->
+                            <a href="/#/user/0i{userID}"
                                 class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">My Account</a>
                         </li>
                         <li>

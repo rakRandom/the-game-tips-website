@@ -23,7 +23,7 @@
         '/login'         : Login,
         '/create-account': CreateAccount,
 
-        '/user/:id'    : UserPage,
+        '/user/:id'    : UserPage, // Params: isUser, userID (separator "i")
         '/article/:id' : Article,
         '/category': Category,
 
