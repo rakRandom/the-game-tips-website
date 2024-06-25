@@ -4,10 +4,48 @@
     import Section from "../components/help/Section.svelte";
 
     let values = [
-        {legend: "LEGENDA", contents: [["B", "A"], ["B", "A"], ["B", "A"], ["B", "A"]]}, 
-        {legend: "LEGENDA", contents: [["B", "A"], ["B", "A"], ["B", "A"], ["B", "A"]]}, 
-        {legend: "LEGENDA", contents: [["B", "A"], ["B", "A"], ["B", "A"], ["B", "A"]]}, 
-        {legend: "LEGENDA", contents: [["B", "A"], ["B", "A"], ["B", "A"], ["B", "A"]]}, 
+        {
+            legend: "Account", 
+            contents: [
+                [
+                    "How to create an account", 
+                    "Lorem Ipsum"
+                ], 
+                [
+                    "Password lost", 
+                    "Lorem Ipsum"
+                ], 
+                [
+                    "Account Hacked", 
+                    "Lorem Ipsum"
+                ], 
+                [
+                    "Delete account", 
+                    "Lorem Ipsum"
+                ]
+            ]
+        }, 
+        {
+            legend: "Content Creation", 
+            contents: [
+                [
+                    "How to be a creator", 
+                    "Lorem Ipsum"
+                ], 
+                [
+                    "How to make an article", 
+                    "Lorem Ipsum"
+                ], 
+                [
+                    "How payment works", 
+                    "Lorem Ipsum"
+                ], 
+                [
+                    "Be a verified creator", 
+                    "Lorem Ipsum"
+                ]
+            ]
+        }, 
     ];
 </script>
 
