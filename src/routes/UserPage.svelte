@@ -2,6 +2,7 @@
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
     import FavoriteGames from "../components/user_page/FavoriteGames.svelte";
+  import { apiLink } from "../stores";
 
     export let params = {};
     let isUser = params.id.split("i")[0];
@@ -9,8 +10,25 @@
 
     var editingname = false, editingbio = false, biolength;
 
-    export var name = "User Name", bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.";
+    export let name = "User Name";
+    export let bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.";
 
+    let content = {
+        name: "",
+        bio: ""
+    };
+
+    getContent();
+
+    async function getContent() {
+        let payload = await fetch({$apiLink} + "get-user/" + userID);
+        let request = await payload.json();
+
+        if (!request)
+            return;
+
+        content = request;
+    }
 
     function editName() {
         var usernamediv = document.getElementById('usernamediv');
@@ -72,14 +90,16 @@
     <Header />
     <div class="flex md:flex-row flex-col md:mx-24 bg-color-0 md:h-full rounded-2xl overflow-hidden mx-5 mb-10 mt-5">
         <div class="flex flex-col relative md:w-1/3 md:h-auto w-full space-y-7 pb-5">
-            <img class="relative rounded-full w-2/3 aspect-square mx-auto shrink mt-8 ring-8 ring-[#69D3C9]" src="src/assets/img/profile picture placeholder.png" alt="image">
+            <img class="relative rounded-full w-2/3 aspect-square mx-auto shrink mt-8 ring-8 ring-[#69D3C9]" src="src/assets/img/profile picture placeholder.png" alt="">
             
             <div class="flex flex-row mx-auto space-x-3 rounded-lg" id="usernamediv">
                 <input type="text" class="text-[150%] text-color-body w-full outline-none ps-2 pb-1 bg-color-mid hidden" value="{name}" id="usernameinput">
                 <p class="text-2xl text-center text-color-body break-words" id="usernametext">{name}</p>
+                {#if isUser}
                 <button on:click={editName}>
                     <img src="public/static/media/img/edit_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="edit name" class="h-8" id="usernameediticon">
                 </button>
+                {/if}
             </div>
     
         </div>
@@ -87,9 +107,11 @@
         <div class="md:w-2/3 w-full">
             <div class="flex flex-row w-auto space-x-3">
                 <p class="text-2xl mt-8 ms-10 text-color-title">Bio:</p>
+                {#if isUser}
                 <button on:click={editBio}>
                     <img src="public/static/media/img/edit_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="edit name" class="relative h-8 mt-8" id="bioediticon">
                 </button>
+                {/if}
             </div>
             <div class="md:mx-10 mx-2 mt-2 bg-color-mid rounded-2xl border-l-4 border-b-4 border-[#69D3C9]">
                 <p class="p-5 text-justify text-color-body" id="biotext">{bio}</p>
