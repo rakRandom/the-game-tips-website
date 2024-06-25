@@ -7,64 +7,62 @@
   export let params = {};
   let categoryID = params.id;
 
-  let content = [
-    {
-      gameName: "",
-      aboutText: "",
-      image: {
-        src: "",
-        alt: ""
-      },
-      sections: [
-        {
-          title: "", 
-          seeAllPage: "",
-          contents: [
-            { 
-              gameName: "", 
-              title: "", 
-              authorPhotoSrc: "", 
-              authorName: "", 
-              postDate: "", 
-              articlePage: ""
-            },
-            { 
-              gameName: "", 
-              title: "", 
-              authorPhotoSrc: "", 
-              authorName: "", 
-              postDate: "", 
-              articlePage: ""
-            },
-            { 
-              gameName: "", 
-              title: "", 
-              authorPhotoSrc: "", 
-              authorName: "", 
-              postDate: "", 
-              articlePage: ""
-            },
-            { 
-              gameName: "", 
-              title: "", 
-              authorPhotoSrc: "", 
-              authorName: "", 
-              postDate: "", 
-              articlePage: ""
-            },
-            { 
-              gameName: "", 
-              title: "", 
-              authorPhotoSrc: "", 
-              authorName: "", 
-              postDate: "", 
-              articlePage: ""
-            },
-          ]
-        },
-      ]
+  let content = {
+    gameName: "",
+    aboutText: "",
+    image: {
+      src: "",
+      alt: ""
     },
-  ];
+    sections: [
+      {
+        title: "", 
+        seeAllPage: "",
+        contents: [
+          { 
+            gameName: "", 
+            title: "", 
+            authorPhotoSrc: "", 
+            authorName: "", 
+            postDate: "", 
+            articlePage: ""
+          },
+          { 
+            gameName: "", 
+            title: "", 
+            authorPhotoSrc: "", 
+            authorName: "", 
+            postDate: "", 
+            articlePage: ""
+          },
+          { 
+            gameName: "", 
+            title: "", 
+            authorPhotoSrc: "", 
+            authorName: "", 
+            postDate: "", 
+            articlePage: ""
+          },
+          { 
+            gameName: "", 
+            title: "", 
+            authorPhotoSrc: "", 
+            authorName: "", 
+            postDate: "", 
+            articlePage: ""
+          },
+          { 
+            gameName: "", 
+            title: "", 
+            authorPhotoSrc: "", 
+            authorName: "", 
+            postDate: "", 
+            articlePage: ""
+          },
+        ]
+      },
+    ]
+  };
 
   async function getContent() {
     let payload = await fetch({$apiLink} + "category/" + categoryID);
@@ -81,6 +79,6 @@
 
 <div>
   <Header className="sticky top-0" />
-  <CategoryTemplate {...content[0]} />
+  <CategoryTemplate {...content} />
   <Footer />
 </div>
