@@ -39,7 +39,7 @@
 }
 @layer base {
   @font-face {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -53,19 +53,19 @@
   }
   
   .font-title-medium {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 500;
     font-style: normal;
   }
   
   .font-title-semibold {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   
   .font-title-bold {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
