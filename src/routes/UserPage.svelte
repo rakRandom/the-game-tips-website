@@ -21,7 +21,7 @@
     getContent();
 
     async function getContent() {
-        let payload = await fetch({$apiLink} + "get-user/" + userID);
+        let payload = await fetch({$apiLink} + "user/" + userID);
         let request = await payload.json();
 
         if (!request)

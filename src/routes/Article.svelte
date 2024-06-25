@@ -10,7 +10,23 @@
 
     let content = [
         {
-
+            game: {
+                name: "",
+                src: "",
+            },
+            title: "",
+            image: {
+                src: "",
+                alt: ""
+            },
+            info: {
+                date: "",
+                author: {
+                    name: "",
+                    id: 0,
+                    imgSrc: ""
+                }
+            }
         },
         [
             {
@@ -20,8 +36,8 @@
                     alt: ""
                 },
                 body: [
-                    "Parágrafo 1",
-                    "Parágrafo 2"
+                    "",
+                    ""
                 ]
             }
         ]
