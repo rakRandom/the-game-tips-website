@@ -164,8 +164,6 @@
         let payload = await requestApi("get-index/0");
         let response = await payload.json();
 
-        console.log(response)
-
         if (response)
             values = response;
     }
