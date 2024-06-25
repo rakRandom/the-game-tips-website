@@ -25,9 +25,13 @@
         else if (menuDropdown == false)
             menuDropdown = true;
     }
+
+    setInterval(() => {
+        console.log(menuDropdown);
+    }, 1000)
 </script>
 
-<header class="z-50 bg-[#001219] w-full h-fit {className}">
+<header class="z-50 bg-[#001219] w-full h-fit {className}" on:load={() => menuDropdown = false}>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     
     <nav class="md:max-w-[1024px] h-fit mx-auto py-2 w-full">
@@ -84,7 +88,7 @@
                     </svg>
                 </button>
             </div>
-            {#if window.screen.width >= 768 || menuDropdown}
+            {#if menuDropdown}
             <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 max-md:mb-4" id="navbar-user">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#69D3C9] max-md:bg-color-mid bg-transparent AAAAAAAFDF] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0
