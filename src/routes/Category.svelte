@@ -9,13 +9,13 @@
 
   let content = [
     {
-      gamename: "God of War",
-      aboutText: "God of War is an action-adventure video game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released on April 20, 2018 for PlayStation 4 and on January 14, 2022 for Microsoft Windows.",
+      gameName: "",
+      aboutText: "",
       image: {
         src: "",
         alt: ""
       },
-      section: [
+      sections: [
         {
           title: "", 
           seeAllPage: "",
