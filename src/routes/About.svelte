@@ -24,7 +24,7 @@
     load();
 </script>
 
-<div class="w-full min-h-screen bg-[#001219]">
+<div class="w-full min-h-screen bg-color-0">
     <Header className="sticky top-0" />
     <MainAbout />
     <hr class="lg:hidden max-w-[1024px] mx-[16px] md:mx-[32px] mt-16 border-t-2">

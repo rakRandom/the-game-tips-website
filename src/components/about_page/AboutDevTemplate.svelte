@@ -13,7 +13,7 @@
 <div class="pb-10">
     <div class="flex flex-wrap rounded-t-full rounded-b-[150rem] md:rounded-l-full md:rounded-r-[150rem] md:h-56 md:w-full h-auto w-72 mx-auto bg-none overflow-hidden">
         <div class="rounded-t-3xl flex md:flex-row flex-col dark:bg-[#001219] bg-[#DFDFDF] md:text-left text-center md:pt-1 md:ps-40 md:h-12 md:w-full pt-72 text-lg h-[375px] w-72 md:ms-24 z-[5]">
-            <p class="w-full text-lg md:pt-2 pt-3 h-auto font-semibold text-[#69D3C9]">{name}</p>
+            <p class="w-full h-fit text-lg md:pt-2 pt-3 font-semibold text-[#69D3C9] line-clamp-1" title={name}>{name}</p>
             <!-- Social Media Icons -->
             <div class="w-full flex flex-row space-x-3 md:justify-end justify-center md:pe-8 pt-1">
                 <a href="{linkedin}" class="h-8 w-8">
