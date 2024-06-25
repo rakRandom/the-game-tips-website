@@ -12,17 +12,19 @@
         {
 
         },
-        {
-            title: "",
-            image: {
-                src: "",
-                alt: ""
-            },
-            body: [
-                "Parágrafo 1",
-                "Parágrafo 2"
-            ]
-        }
+        [
+            {
+                title: "",
+                image: {
+                    src: "",
+                    alt: ""
+                },
+                body: [
+                    "Parágrafo 1",
+                    "Parágrafo 2"
+                ]
+            }
+        ]
     ];
 
     async function getContent() {
@@ -43,7 +45,7 @@
     <HeadlineTemplate {...content[0]} />
     <main class="flex flex-col gap-16 flex-1 max-w-[1024px] w-full mx-auto py-24">
         <!-- MODELO A SER USADO: -->
-        {#each Array(content[1]) as element}
+        {#each content[1] as element}
         <div class="">
             {#if element.title}
             <h2 class="">
@@ -65,7 +67,7 @@
         </div>
         {/each}
 
-        <!-- DELETAR CONTEÚDO ABAIXO -->>
+        <!-- DELETAR CONTEÚDO ABAIXO -->
         <div class="justify-center">
         <p class="text-2xl text-justify">
             If you want a melee build in Elden Ring, it's a good idea to invest
