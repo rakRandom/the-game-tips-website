@@ -25,10 +25,6 @@
         else if (menuDropdown == false)
             menuDropdown = true;
     }
-
-    setInterval(() => {
-        console.log(menuDropdown);
-    }, 1000)
 </script>
 
 <header class="z-50 bg-[#001219] w-full h-fit {className}">
