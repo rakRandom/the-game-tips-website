@@ -11,7 +11,7 @@
 </script>
 
 <div class="pb-10">
-    <div class="flex flex-wrap rounded-t-full rounded-b-[150rem] md:rounded-l-full md:rounded-r-[150rem] md:h-56 md:w-3/5 h-auto w-72 mx-auto bg-none overflow-hidden">
+    <div class="flex flex-wrap rounded-t-full rounded-b-[150rem] md:rounded-l-full md:rounded-r-[150rem] md:h-56 md:w-full h-auto w-72 mx-auto bg-none overflow-hidden">
         <div class="rounded-t-3xl flex md:flex-row flex-col dark:bg-[#001219] bg-[#DFDFDF] md:text-left text-center md:pt-1 md:ps-40 md:h-12 md:w-full pt-72 text-lg h-[375px] w-72 md:ms-24 z-[5]">
             <p class="w-full text-lg md:pt-2 pt-3 h-auto font-semibold text-[#69D3C9]">{name}</p>
             <!-- Social Media Icons -->
@@ -31,7 +31,7 @@
             </div>
         </div>
         <img class="absolute h-72 w-72 md:h-56 md:w-56 rounded-full z-[5] object-cover" src={fetchImage(image)} alt="">
-        <p class="dark:bg-[#051D26] bg-[#EEEEEE] md:ps-64 md:pt-3 md:text-lg md:pe-12 md:h-full md:w-full px-4 pt-1 pb-3 text-color-body">{description}</p>
+        <p class="dark:bg-[#051D26] bg-[#EEEEEE] md:ps-64 md:pt-3 md:text-lg md:pe-12 md:h-full md:w-full px-4 pt-3 pb-3 text-color-body">{description}</p>
     </div>
 </div>
 
