@@ -1,29 +1,25 @@
 <script>
-  let eldenRingImg = "../src/assets/img/eldenRingImage.svg";
-  let userImage = "userImage.svg";
+  export let game;
+  export let title;
+  export let image;
+  export let info;
+
 </script>
 
-<div class="flex flex-col w-full min-h-screen">
-  <main class="flex flex-col gap-32 flex-1 max-w-[1024px] w-full mx-auto py-24">
-    <div>
-      <h1
-        class="flex items-start text-5xl text-color-title font-title-semibold mb-12"
-      >
-        ELDEN RING
-      </h1>
-      <h3 class="text-3xl font-title-regular mb-10">
-        Where to Find Lucerne in Elden Ring
-      </h3>
-      <img src={eldenRingImg} alt="Elden Ring" class="mb-8" />
-      <div class="flex flex-row items-center">
-        <img src={userImage} alt="User" />
-        <p class="text-color-title mx-5">
-          By Valteci Junior T. • Mai 28, 2024
-        </p>
-      </div>
-      <p class="text-color-title flex justify-center mt-2">
-        _______________________________________________________________________________________________________________________________________________________
+<div class="gap-32 md:max-w-[1281px] md:mx-auto md:py-10 py-5 border-b-2 border-[#69D3C9] mx-5 mb-10">
+  <h1 class="md:text-4xl text-2xl text-color-title font-title-semibold mb-4 uppercase break-all hover:underline">
+      <a href="{game.src}">{game.name}</a>
+  </h1>
+  <h3 class="md:text-4xl text-2xl font-title-regular mb-5">
+      {title}
+  </h3>
+  <div class="">
+      <img src="{image.src}" alt="{image.alt}" class="mb-8 w-screen aspect-video" />
+  </div>
+  <div class="items-center flex flex-row">
+      <a href="/#/user/0i{info.author.id}"><img src={info.author.imgSrc} alt="Author Image" class="md:h-10 h-8 rounded-full" /></a>
+      <p class="text-color-title ms-2 break-all md:text-lg text-base">
+          By <a href="/#/user/0i{info.author.id}" class="hover:underline">{info.author.name}</a> • {info.date}
       </p>
-    </div>
-  </main>
+  </div>
 </div>
