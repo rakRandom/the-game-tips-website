@@ -10,9 +10,6 @@
 
     var editingname = false, editingbio = false, biolength;
 
-    export let name = "User Name";
-    export let bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.";
-
     let content = {
         name: "",
         bio: ""
@@ -51,7 +48,7 @@
             usernameediticon.src = 'public/static/media/img/edit_24dp_FILL0_wght400_GRAD0_opsz24.svg';
         }
 
-        name = usernameinput.value;
+        content.name = usernameinput.value;
     }
 
     function editBio() {
@@ -76,7 +73,7 @@
         }
 
         biolength = bioinput.value.length;
-        bio = bioinput.value;
+        content.bio = bioinput.value;
     }
 
     function characterCount() {
@@ -93,8 +90,8 @@
             <img class="relative rounded-full w-2/3 aspect-square mx-auto shrink mt-8 ring-8 ring-[#69D3C9]" src="src/assets/img/profile picture placeholder.png" alt="">
             
             <div class="flex flex-row mx-auto space-x-3 rounded-lg" id="usernamediv">
-                <input type="text" class="text-[150%] text-color-body w-full outline-none ps-2 pb-1 bg-color-mid hidden" value="{name}" id="usernameinput">
-                <p class="text-2xl text-center text-color-body break-words" id="usernametext">{name}</p>
+                <input type="text" class="text-[150%] text-color-body w-full outline-none ps-2 pb-1 bg-color-mid hidden" value="{content.name}" id="usernameinput">
+                <p class="text-2xl text-center text-color-body break-words" id="usernametext">{content.name}</p>
                 {#if isUser}
                 <button on:click={editName}>
                     <img src="public/static/media/img/edit_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="edit name" class="h-8" id="usernameediticon">
@@ -114,8 +111,8 @@
                 {/if}
             </div>
             <div class="md:mx-10 mx-2 mt-2 bg-color-mid rounded-2xl border-l-4 border-b-4 border-[#69D3C9]">
-                <p class="p-5 text-justify text-color-body" id="biotext">{bio}</p>
-                <textarea class="outline-none w-full resize-none p-5 text-color-body bg-color-mid hidden" on:input={characterCount} rows="10" maxlength="1500" id="bioinput">{bio}</textarea>
+                <p class="p-5 text-justify text-color-body" id="biotext">{content.bio}</p>
+                <textarea class="outline-none w-full resize-none p-5 text-color-body bg-color-mid hidden" on:input={characterCount} rows="10" maxlength="1500" id="bioinput">{content.bio}</textarea>
                 <p class="relative text-right text-color-body pb-2 pe-3 hidden" id="biocharcount">{biolength}/1500</p>
             </div>
     
