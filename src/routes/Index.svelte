@@ -161,7 +161,7 @@
     import { requestApi } from '../api/api_connection.js';
 
     async function getContent() {
-        let payload = await requestApi("get-index/0");
+        let payload = await requestApi("index/0");
         let response = await payload.json();
 
         if (response)
