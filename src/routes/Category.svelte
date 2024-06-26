@@ -1,10 +1,11 @@
 <script>
+  import { fetchImage } from "../api/api_connection";
+
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
+  import { apiLink } from "../stores";
   import SimpleSection from "../components/SimpleSection.svelte";
   import PopUpArticle from "../components/PopUpArticle.svelte";
-
-  import { apiLink } from "../stores";
 
   export let params = {};
   let categoryID = params.id;
@@ -67,7 +68,7 @@
   };
 
   async function getContent() {
-    let payload = await fetch($apiLink + "category/" + categoryID);
+    let payload = await fetch({$apiLink} + "category/" + categoryID);
     let request = await payload.json();
 
     if (!request)
@@ -79,21 +80,21 @@
   getContent();
 </script>
 
-<div>
+<div class="bg-color-0">
   <Header className="sticky top-0" />
-  <div class="w-full h-full bg-green-500">
-    <div class="bg-red-600 mx-auto md:h-3/4 w-full aspect-video">
-      <img src={content.image.src} alt={content.image.alt} class="w-full h-full">
+  <div class="w-full max-w-[1280px] lg:min-w-[1024px] h-fit lg:min-h-[500px] mx-auto bg-color-mid mb-20">
+    <div class="mx-auto md:h-3/4 w-full aspect-video">
+      <img src={fetchImage(content.image.src)} alt={content.image.alt} class="w-full h-full">
     </div>
-    <div class="bg-purple-500 w-full h-96">
-      <h1 class="md:text-2xl text-xl text-color-title">
+    <div class="w-full h-full md:space-y-5 space-y-3 p-5">
+      <h1 class="md:text-6xl text-4xl text-color-title text-center uppercase">
           {content.gameName}
       </h1>
-      <p class="md:text-lg text-base text-color-body text-justify break-words">
-        {content.aboutText}
+      <p class="md:text-xl text-base text-color-body text-justify break-words">
+          {content.aboutText}
       </p>
     </div>
-    <div class="">
+    <div class="dark:bg-[#001A24] bg-[#EEE] py-4">
       {#each content.sections as sectionData}
       <SimpleSection elementType={PopUpArticle} {...sectionData} />
       {/each}

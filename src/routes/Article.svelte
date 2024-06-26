@@ -1,4 +1,6 @@
 <script>
+    import { fetchImage } from "../api/api_connection";
+
     import Header from "../components/Header.svelte";
     import HeadlineTemplate from "../components/article_page/HeadlineTemplate.svelte";
     import Footer from "../components/Footer.svelte";
@@ -56,34 +58,36 @@
     getContent();
 </script>
 
-<!-- estilização temporária até adição de um artigo para visualizar como ficou e melhorar o que for necessário-->
-<div class="w-full min-h-screen bg-color-0 text-color-body">
+<div class="bg-color-0">
     <Header className="sticky top-0" />
-    <HeadlineTemplate {...content[0]} />
-    <main class="flex flex-col gap-16 flex-1 max-w-[1024px] w-full mx-auto py-24">
-        <!-- MODELO A SER USADO: -->
-        {#each content[1] as element}
-        <div class="bg-color-mid p-5">
-            {#if element.title}
-            <h2 class="md:text-2xl text-lg text-color-title break-words">
-                {element.title}
-            </h2>
-            {/if}
+    <div class="w-full max-w-[1280px] lg:min-w-[1024px] h-fit lg:min-h-[500px] bg-color-mid text-color-body mx-auto">
+        <HeadlineTemplate {...content[0]} />
+        <main class="flex flex-col gap-8 flex-1 max-w-[1024px] w-full mx-auto mb-10 pb-10">
+            <!-- MODELO A SER USADO: -->
+            {#each content[1] as element}
+            <div class="bg-color-mid p-5">
+                {#if element.title}
+                <h2 class="text-3xl text-color-title break-words">
+                    {element.title}
+                </h2>
+                {/if}
 
-            {#if element.image}
-            <img src={element.image.src} alt={element.image.alt} class="">
-            {/if}
+                {#if element.image}
+                <img src={fetchImage(element.image.src)} alt={element.image.alt} class="w-full h-full">
+                {/if}
 
-            {#if element.body}
-                {#each element.body as paragraph}
-                <p class="md:text-lg text-base text-color-body text-justify break-words">
-                    {paragraph}
-                </p>
-                {/each}
-            {/if}
-        </div>
-        {/each}
+                {#if element.body}
+                    {#each element.body as paragraph}
+                    <p class="md:text-xl text-lg text-color-body text-justify break-words">
+                        {paragraph}
+                    </p>
+                    {/each}
+                {/if}
+            </div>
+            {/each}
 
-    </main>
+
+        </main>
+    </div>
     <Footer />
 </div>
