@@ -5,7 +5,7 @@
 
     export let name;
     export let phrase;
-    export let articlePage = "#";
+    export let articleID = "#";
     export let icon;
     export let image;
 
@@ -46,7 +46,7 @@
                     {phrase}
                 </div>
             </div>
-            <a href={articlePage} class="group text-[#69D3C9] text-center py-1">
+            <a href={"#/article/" + articleID} class="group text-[#69D3C9] text-center py-1">
                 Want to see more? Check out the complete tip ;)
                 <hr class="w-0 mx-auto border-[#69D3C9] 
                            group-hover:w-[75%]

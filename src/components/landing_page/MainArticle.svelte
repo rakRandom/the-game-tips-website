@@ -35,7 +35,7 @@
                 </h2>
                 <p class="text-[1rem] opacity-75 font-light">
                     By
-                    <a href={authorPage} class="hover:underline">
+                    <a href={"#/user/" + authorPage} class="hover:underline">
                         {authorName}
                     </a>
                     - {articleDate}
