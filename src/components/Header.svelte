@@ -84,7 +84,7 @@
                     </svg>
                 </button>
             </div>
-            {#if menuDropdown}
+            {#if (window.innerWidth >= 768 || menuDropdown)}
             <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 max-md:mb-4" id="navbar-user">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#69D3C9] max-md:bg-color-mid bg-transparent AAAAAAAFDF] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0
