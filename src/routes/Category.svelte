@@ -68,7 +68,7 @@
   };
 
   async function getContent() {
-    let payload = await fetch({$apiLink} + "category/" + categoryID);
+    let payload = await fetch($apiLink + "category/" + categoryID);
     let request = await payload.json();
 
     if (!request)
