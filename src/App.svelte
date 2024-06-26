@@ -25,7 +25,7 @@
 
         '/user/:id'    : UserPage, // Params: isUser, userID (separator "i")
         '/article/:id' : Article,
-        '/category': Category,
+        '/category/:id': Category,
 
         '/admin': Admin,
         '*'     : NotFound
