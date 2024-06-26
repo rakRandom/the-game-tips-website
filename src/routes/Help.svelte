@@ -9,19 +9,19 @@
             contents: [
                 [
                     "How to create an account", 
-                    "Lorem Ipsum"
+                    "Click on the user icon in the top right corner of the screen and then on \"sign up\" or scroll down to the footer and click on the \"login\" link, fill in the information requested on the registration form and click on \"create account\""
                 ], 
                 [
                     "Password lost", 
-                    "Lorem Ipsum"
+                    "Click on the user icon in the top right corner of the screen and then on \"settings\", there you will find the option to modify your password, where you will only need to confirm the operation via email to reset the password. If the password is lost during sign in, there is a small caption that contains the text \"forgot password?\", clicking on it takes you to the same need to confirm the operation by email and then modify your password."
                 ], 
                 [
                     "Account Hacked", 
-                    "Lorem Ipsum"
+                    "In \"our team\" you can chat directly with us and our technical support and request deactivation and verification of your account, which will be done as soon as possible"
                 ], 
                 [
                     "Delete account", 
-                    "Lorem Ipsum"
+                    "Click on the user icon and then select \"my account\", scrolling down the screen you can find a button responsible for deleting your account."
                 ]
             ]
         }, 
@@ -30,11 +30,11 @@
             contents: [
                 [
                     "How to be a creator", 
-                    "Lorem Ipsum"
+                    "In \“our team\” you can chat directly with us and inform us that you want to be a content creator for our platform, we will investigate the request and get back to you as soon as possible"
                 ], 
                 [
                     "How to make an article", 
-                    "Lorem Ipsum"
+                    "When becoming an article creator, a new selection opens when clicking on the user icon and a new link appears in the footer at the bottom of the page, where these selections lead to a development region within our site that allows writing and editing, uploading articles produced on another platform and finally posting the materials."
                 ], 
                 [
                     "How payment works", 
