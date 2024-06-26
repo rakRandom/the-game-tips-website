@@ -30,9 +30,9 @@
 
 <Header />
 
-<div class="w-full max-w-[500px] mx-auto mt-[140px] rounded-lg overflow-hidden shadow-lg">
+<div class="w-full max-w-[500px] mx-auto mt-5 rounded-lg overflow-hidden shadow-lg mb-5 bg-color-0">
 <div class="bg-[#00141e] flex items-center justify-center p-2">
-  <img src="../../public/logoImage.svg" alt="" class="mr-2" />
+  <img src="../../public/logoImage.svg" alt="" class="mr-2 h-8 w-8" />
   <h1 class="text-[#2ec4b6] font-[Courier Prime] text-xl">The Game Tips</h1>
 </div>
 <div class="form-bg bg-[#002331] bg-cover bg-center p-8 flex flex-col items-center">
