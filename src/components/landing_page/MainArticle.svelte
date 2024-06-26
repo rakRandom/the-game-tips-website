@@ -42,7 +42,7 @@
                 </p>
             </div>
             <div class="flex items-center w-full lg:w-[66%] lg:px-4 lg:py-2 lg:border-l-2 border-[#1E9B8F] dark:border-[#69D3C9]">
-                <a href={articlePage} class="text-[1.25rem] lg:text-[1.50rem] text-color-body w-full hover:-translate-y-1 transition-all">
+                <a href={articlePage} class="text-[1.25rem] lg:text-[1.50rem] text-color-body w-full">
                     {articleTitle}
                 </a>
             </div>
