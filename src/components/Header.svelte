@@ -75,11 +75,11 @@
                         {:else}
                         <li>
                             <!-- 0 significa que é o próprio usuário -->
-                            <a href="/#/user/0i{userID}"
+                            <a href="#/create-account"
                                 class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">Create Account</a>
                         </li>
                         <li>
-                            <a href="/"
+                            <a href="#/login"
                                 class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">Login</a>
                         </li>
                         {/if}
