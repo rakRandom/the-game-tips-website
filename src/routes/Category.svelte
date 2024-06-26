@@ -1,9 +1,10 @@
 <script>
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
-  import { apiLink } from "../stores";
   import SimpleSection from "../components/SimpleSection.svelte";
   import PopUpArticle from "../components/PopUpArticle.svelte";
+
+  import { apiLink } from "../stores";
 
   export let params = {};
   let categoryID = params.id;
@@ -66,7 +67,7 @@
   };
 
   async function getContent() {
-    let payload = await fetch({$apiLink} + "category/" + categoryID);
+    let payload = await fetch($apiLink + "category/" + categoryID);
     let request = await payload.json();
 
     if (!request)

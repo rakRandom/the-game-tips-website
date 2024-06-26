@@ -5,7 +5,7 @@
 
     export let gameTitle;
     export let description;
-    export let categoryPage;
+    export let categoryID;
     export let imgSrc;
 </script>
 
@@ -19,7 +19,7 @@
                 <p class="flex-1 text-lg text-color-body text-ellipsis overflow-hidden">
                     {description}
                 </p>
-                <RedirectButton href={categoryPage} />
+                <RedirectButton href={"#/category/" + categoryID} />
             </div>
             <div class="flex-1 flex items-center gap-10 h-full overflow-x-auto">
                 <img src={fetchImage(imgSrc)} alt="" class="w-full bg-white object-cover aspect-[14/10] max-md:aspect-video max-lg:aspect-square lg:rounded-lg lg:h-full">
