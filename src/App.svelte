@@ -30,8 +30,12 @@
         '/admin': Admin,
         '*'     : NotFound
     }
+
+    const loaded = () => {
+        window.scrollTo(0,0);
+    }
 </script>
 
 <main>
-    <Router {routes} />
+    <Router {routes} on:routeLoaded={loaded} />
 </main>
