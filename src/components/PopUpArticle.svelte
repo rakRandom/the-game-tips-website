@@ -22,7 +22,7 @@
                         <p class="text-sm line-clamp-2 text-color-body"> {title} </p>
                     </div>
                     <a href="/" class="flex items-center gap-2 text-[14px] font-light p-1 bg-[#051D26]">
-                        <img src={authorPhotoSrc} alt="" class="inline-block h-6 aspect-square border-[1px] border-[#69D3C9BE] rounded-full">
+                        <img src={fetchImage(authorPhotoSrc)} alt="" class="inline-block h-6 aspect-square border-[1px] border-[#69D3C9BE] rounded-full">
                         <span class="text-[#69D3C9BE] w-full text-center">By {authorName} - {postDate}</span>
                     </a>
                 </div>
