@@ -4,6 +4,7 @@
     let isFontBig = false;
     let userID = 100;
 
+    $: logged = false;
     $: userDropdown = false;
     $: menuDropdown = false;
 
@@ -57,6 +58,7 @@
                         <span class="block text-sm text-white">User Name</span>
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
+                        {#if logged}
                         <li>
                             <!-- 0 significa que é o próprio usuário -->
                             <a href="/#/user/0i{userID}"
@@ -70,6 +72,17 @@
                             <a href="/"
                                 class="block px-4 py-2 text-sm text-white hover:text-red-600">Sign Out</a>
                         </li>
+                        {:else}
+                        <li>
+                            <!-- 0 significa que é o próprio usuário -->
+                            <a href="/#/user/0i{userID}"
+                                class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">Create Account</a>
+                        </li>
+                        <li>
+                            <a href="/"
+                                class="block px-4 py-2 text-sm text-white hover:text-[#69D3C9]">Login</a>
+                        </li>
+                        {/if}
                     </ul>
                 </div>
                 {/if}
