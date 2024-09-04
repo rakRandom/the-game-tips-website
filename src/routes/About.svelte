@@ -42,7 +42,7 @@
     </div>
     <hr class="lg:hidden max-w-[1024px] mx-[16px] md:mx-[32px] mt-16 border-t-2">
     <div class="flex items-center justify-center mb-10 max-w-[1024px] mx-auto">
-        <h2 class="text-color-body text-[36px] font-title-bold block text-center my-36 px-[16px] md:px-[100px]">
+        <h2 class="block text-4xl text-color-title font-title-bold text-center my-28 px-[16px] md:px-[100px] py-16 dark:bg-[#001A24] bg-[#EEE] border-2 max-lg:border-x-0 border-[#69D3C9] dark:border-white lg:rounded-lg">
             Success is not definitive, failure is not fatal: It is the courage to
             continue that counts.
         </h2>
