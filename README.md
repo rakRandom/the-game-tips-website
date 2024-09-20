@@ -1,47 +1,47 @@
-# Svelte + Vite
+# The Game Tips
 
-This template should help get you started developing with Svelte in Vite.
+The Game Tips is a news website with the objective to provide useful tips about the world of games.
 
-## Recommended IDE Setup
+This website is a school project as a challenge for the Systems Development course, and it is divided in front-end and back-end.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+>Note: This repository contains only the front-end, to access the back-end click [here](https://github.com/rakRandom/the-game-tips-api).
 
-## Need an official Svelte framework?
+## Layout (Pages)
+- [Landing_Page](#landing-page)
+- [Article/Tip](#articletip)
+- [Category](#category)
+- [Help Page](#help-page)
+- [Login/Create Account](#logincreate-account)
+---
+### Landing Page
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+TBA
 
-## Technical considerations
+### Article/Tip
 
-**Why use this over SvelteKit?**
+TBA
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+### Category
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+TBA
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+### Help Page
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+TBA
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+### Login/Create Account
 
-**Why include `.vscode/extensions.json`?**
+Currently not working.
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+## Team
+- [Bárbara Fernandes Rampazi](https://github.com/caramelPopp) (caramelPopp)
+- [Fellipe Leonardo Peixoto Cunha](https://github.com/rakRandom) (rakRandom)
+- [Henrique da Silva Macedo](https://github.com/HickSouldrow) (HickSouldrow)
+- [Lucas Tino Rosa](https://github.com/Lucas-Tino) (Lucas T.)
+- [Matheus Jorge Santana](https://github.com/mathsant-js) (mathsant-js)
 
-**Why enable `checkJs` in the JS template?**
+## License
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+This repository is currently not under any license.
 
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+<br />
