@@ -1,6 +1,6 @@
 # The Game Tips
 
-The Game Tips is a news website with the objective to provide useful tips about the world of games.
+[The Game Tips](https://thegametips.vercel.app/) is a news website with the objective to provide useful tips about the world of games.
 
 This website is a school project as a challenge for the Systems Development course, and it is divided in front-end and back-end.
 
